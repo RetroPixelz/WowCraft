@@ -1,0 +1,36 @@
+.body { 
+padding: 0;
+margin: 0;
+}
+
+.toolbar {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+
+    // background-color: rgba(0, 0, 0, 0.363);
+    // background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.192));
+  }
+ 
+
+  a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 30px;
+    
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline ;
+  }
+
+  

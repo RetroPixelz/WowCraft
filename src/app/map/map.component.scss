@@ -1,0 +1,235 @@
+.MapSectioning {
+    display: flex;
+}
+
+.MapHere {
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 55%;
+    height: 700px;
+    background-image: url(../../assets/Map.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.IllustrationTwo {
+    width: 500px;
+    height: 850px;
+    background-image: url(../../assets/Decor2.png);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    // float: right;
+    // position: fixed;
+}
+
+.Horde {
+    background-image: url(../../assets/Horde.png);
+    width: 40px;
+    height: 60px;
+    background-size: cover;
+    position: absolute;
+    left: 310px;
+    bottom: 250px;
+}
+
+.Horde:hover {
+    width: 60px;
+    height: 80px;
+    left: 300px;
+    transition: ease-in-out 0.2s;
+
+}
+
+.Alliance {
+    background-image: url(../../assets/Alliance.png);
+    width: 80px;
+    height: 50px;
+    background-size: cover;
+    position: absolute;
+    right: 300px;
+    bottom: 200px;
+}
+
+.Alliance:hover {
+    width: 100px;
+    height: 70px;
+    right: 290px;
+    transition: ease-in-out 0.2s;
+}
+
+.ThunderBluff {
+    background-image: url(../../assets/ThunderBluff.png);
+    width: 80px;
+    height: 60px;
+    background-size: cover;
+    position: absolute;
+    left: 200px;
+    bottom: 200px;
+}
+
+.ThunderBluff:hover {
+    width: 100px;
+    height: 80px;
+    left: 185px;
+    transition: ease-in-out 0.2s;
+
+}
+
+.StockSection {
+    width: 80%;
+    margin: auto;
+    height: 800px;
+    // background-color: red;
+    margin-top: 500px;
+    
+}
+
+.LocationNav {
+    width: 50%;
+    margin: auto;
+    height: 60px;
+    display: flex;
+}
+
+.LocationOne {
+    flex: 1;
+    width: 200px;
+    height: 40px;
+    padding-top: 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 1px solid white;
+}
+
+.LocationOne:hover {
+    background-color: rgba(83, 83, 83, 0.603);
+    transition: ease-in-out 0.2s;
+    
+}
+
+.LocationTwo {
+    flex: 1;
+    width: 200px;
+    height: 40px;
+    padding-top: 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+.LocationTwo:hover {
+    background-color: rgba(83, 83, 83, 0.603);
+    transition: ease-in-out 0.2s;
+
+}
+
+.LocationThree {
+    flex: 1;
+    width: 200px;
+    height: 40px;
+    padding-top: 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 1px solid white;
+}
+.LocationThree:hover {
+    background-color: rgba(83, 83, 83, 0.603);
+    transition: ease-in-out 0.2s;
+
+}
+
+h4 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.ItemSection {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+
+
+// ITEM //
+
+.Item {
+    width: 150px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+    margin-left: 10px;
+}
+
+.ItemImage {
+    width: 100px;
+    height: 100px;
+    background-image: url(../../assets/potion.webp);
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.Quantity {
+    width: 80%;
+    height: 40px;
+    // background-color: green;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    display: flex;
+}
+
+
+.Less {
+    display: 1;
+    width: 40px;
+    height: 85%;
+    font-size: 20px;
+    background-color: rgb(107, 107, 107);
+    text-align: center;
+    color: white;
+    padding-top: 2px;
+    border-radius: 5px;
+}
+
+.Amount {
+    display: 1;
+
+    width: 40px;
+    height: 75%;
+
+    // background-color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+
+}
+
+.More {
+    display: 1;
+
+    width: 40px;
+    height: 85%;
+    font-size: 20px;
+    background-color: rgb(107, 107, 107);
+
+    text-align: center;
+    color: white;
+    padding-top: 2px;
+    border-radius: 5px;
+
+}

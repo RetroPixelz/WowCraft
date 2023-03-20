@@ -1,0 +1,120 @@
+.CraftingPageSection{
+    height: 100vh;
+}
+
+
+
+
+
+//RECIPES HERE
+.Recipes {
+    height: 325px;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    // background-color: yellowgreen;
+}
+
+h1 {
+    color: white;
+}
+
+.craftingItemSection {
+    width: 100%;
+    // background-color: red;
+    height: 80%;
+    margin-top: 20px;
+    display: flex;
+    // overflow: scroll;
+}
+
+.CraftingItem {
+    margin-left: 50px;
+    width: 125px;
+    height: 250px;
+    // background-color: blue;
+}
+
+.CraftingImage {
+    background-image: url(../../assets/potion.webp);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.CraftingText {
+    width: 80%;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+
+
+//CRAFTING HERE
+.CraftingSection {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    // background-color: red;
+
+}
+
+.CraftingBlock{
+    width: 70%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 50px;
+    border: 0.5px solid white;
+    display: flex;
+}
+
+.CraftingItemOne {
+    width: 200px;
+    margin-left: 50px;
+    // background-color: red;
+}
+
+.TextHere {
+    // width: 125px;
+    margin-left: 50px;
+    margin-top: 125px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.CraftingitemImage {
+    width: 100px;
+    height: 100px;
+    background-image: url(../../assets/potion.webp);
+    background-size: cover;
+    margin: auto;
+    margin-top: 80px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-top: 10px;
+}
+
+.CraftingButton {
+    width: 250px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 15px;
+    border: 1px solid white;
+    margin-top: 25px;
+    padding-top: 5px;
+}
+
+.CraftingButton:hover {
+    background-color: rgba(0, 0, 0, 0.575);
+
+}
