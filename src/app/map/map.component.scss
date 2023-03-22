@@ -14,12 +14,13 @@
 }
 
 .IllustrationTwo {
-    width: 500px;
-    height: 850px;
+    width: 400px;
+    height: 650px;
     background-image: url(../../assets/Decor2.png);
     background-size: cover;
     position: absolute;
     right: 0;
+    top: 250px;
     // float: right;
     // position: fixed;
 }
@@ -156,80 +157,80 @@ h4 {
 
 // ITEM //
 
-.Item {
-    width: 150px;
-    height: 250px;
-    background-color: rgba(0, 0, 0, 0.603);
-    border-radius: 20px;
-    border: 1px solid white;
-    position: relative;
-    margin-left: 10px;
-}
+// .Item {
+//     width: 150px;
+//     height: 250px;
+//     background-color: rgba(0, 0, 0, 0.603);
+//     border-radius: 20px;
+//     border: 1px solid white;
+//     position: relative;
+//     margin-left: 10px;
+// }
 
-.ItemImage {
-    width: 100px;
-    height: 100px;
-    background-image: url(../../assets/potion.webp);
-    background-size: cover;
-    margin: auto;
-    margin-top: 20px;
-}
+// .ItemImage {
+//     width: 100px;
+//     height: 100px;
+//     background-image: url(../../assets/potion.webp);
+//     background-size: cover;
+//     margin: auto;
+//     margin-top: 20px;
+// }
 
-p {
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-}
+// p {
+//     text-align: center;
+//     color: white;
+//     margin-top: 10px;
+// }
 
-.Quantity {
-    width: 80%;
-    height: 40px;
-    // background-color: green;
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-    display: flex;
-}
+// .Quantity {
+//     width: 80%;
+//     height: 40px;
+//     // background-color: green;
+//     position: absolute;
+//     bottom: 20px;
+//     left: 15px;
+//     display: flex;
+// }
 
 
-.Less {
-    display: 1;
-    width: 40px;
-    height: 85%;
-    font-size: 20px;
-    background-color: rgb(107, 107, 107);
-    text-align: center;
-    color: white;
-    padding-top: 2px;
-    border-radius: 5px;
-}
+// .Less {
+//     display: 1;
+//     width: 40px;
+//     height: 85%;
+//     font-size: 20px;
+//     background-color: rgb(107, 107, 107);
+//     text-align: center;
+//     color: white;
+//     padding-top: 2px;
+//     border-radius: 5px;
+// }
 
-.Amount {
-    display: 1;
+// .Amount {
+//     display: 1;
 
-    width: 40px;
-    height: 75%;
+//     width: 40px;
+//     height: 75%;
 
-    // background-color: blue;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    color: white;
-    padding-top: 10px;
+//     // background-color: blue;
+//     margin-left: 10px;
+//     margin-right: 10px;
+//     text-align: center;
+//     color: white;
+//     padding-top: 10px;
 
-}
+// }
 
-.More {
-    display: 1;
+// .More {
+//     display: 1;
 
-    width: 40px;
-    height: 85%;
-    font-size: 20px;
-    background-color: rgb(107, 107, 107);
+//     width: 40px;
+//     height: 85%;
+//     font-size: 20px;
+//     background-color: rgb(107, 107, 107);
 
-    text-align: center;
-    color: white;
-    padding-top: 2px;
-    border-radius: 5px;
+//     text-align: center;
+//     color: white;
+//     padding-top: 2px;
+//     border-radius: 5px;
 
-}
+// }

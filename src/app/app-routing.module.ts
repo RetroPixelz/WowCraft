@@ -6,13 +6,9 @@ import { LandingComponent } from './landing/landing.component';
 import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
-  // {path: "initial",  component, InitialCompnent},
-  // {path: "List",  component, ListCompnent},
   {path: "Landing", component: LandingComponent},
   {path: "Map", component: MapComponent},
   {path: "Crafting", component: CraftingComponent},
-
-  // {path: "NewPage", component: NewPostComponent},
 ];
 
 @NgModule({

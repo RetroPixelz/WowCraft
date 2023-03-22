@@ -1,5 +1,5 @@
 .CraftingPageSection{
-    height: 100vh;
+    height: 85vh;
 }
 
 
@@ -25,7 +25,8 @@ h1 {
     height: 80%;
     margin-top: 20px;
     display: flex;
-    // overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .CraftingItem {
@@ -115,6 +116,16 @@ p {
 }
 
 .CraftingButton:hover {
-    background-color: rgba(0, 0, 0, 0.575);
+    // background-color: rgba(0, 0, 0, 0.575);
+    background: #74c75c;
+}
 
+.Decor5 {
+    background-image: url(../../assets/Decor5.png);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 570px;
 }
