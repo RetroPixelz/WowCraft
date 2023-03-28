@@ -4,6 +4,8 @@
 }
 
 
+
+
 //SCROLLBAR//
 
     /* width */
@@ -45,5 +47,8 @@ html {
     padding-top: 60px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
     // height: auto;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

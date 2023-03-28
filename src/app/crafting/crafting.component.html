@@ -1,9 +1,42 @@
 <div class="BackGround">
 
-    <div class="CraftingPageSection">
+    <div appAuthOnly [isVerified]="!isVerified" class="VerifyFirst">
+
+        <div class="VerifySection">
+        <p class="pleaseVerifyText">Please verify yourself as a crafting user:</p>
+
+        <mat-form-field  class="VerifySection_UsernameFeild">
+            <mat-label>Username</mat-label>
+            <input [formControl]="username" matInput placeholder="Ex. Jeff" type="text" >
+          </mat-form-field>
+          
+          <mat-form-field class="VerifySection_PasswordFeild">
+            <mat-label>Password</mat-label>
+            <input [formControl]="password" matInput placeholder="Ex. Jeff@123" type="text" >
+          </mat-form-field>
+
+
+
+        <!-- <input [formControl]="username" placeholder="username" type="text" class="VerifySection_UsernameFeild"/> -->
+        
+        <!-- <input [formControl]="password" placeholder="password" type="password" class="VerifySection_PasswordFeild"/> -->
+
+        <button (click)="CheckVerification()" class="VerifySection_VerifyButton">Verify</button>
+        
+        
+        </div>
+        
+
+    </div>
+
+    
+    <div appAuthOnly [isVerified]="isVerified"  class="CraftingPageSection">
+
 
         <div class="Recipes">
-            <h1> Have a look at all out available recipes here!</h1>
+            <!-- <h1> Hi {{username.value | uppercase }} </h1> -->
+
+            <h1> Hi {{username.value | uppercase }}, Have a look at all the available recipes here!</h1>
 
             <div class="craftingItemSection">
 

@@ -2,10 +2,75 @@
     height: 85vh;
 }
 
+//If not verified craftring section
+.VerifyFirst {
+    height: 85vh;
+    margin: auto;
+    width: 700px;
+}
+
+.VerifySection {
+    height: 400px;
+    width: 100%;
+    // background-color: ;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 100px;
+  
+    
+
+    &_UsernameFeild {
+        width: 500px;
+        margin: auto;
+        height: 50px;
+        margin-top: 80px;
+        color: #17c52e;
+    }
+
+    .mdc-text-field__input { 
+        color: rgb(255, 255, 255);
+    }
+
+    &_PasswordFeild {
+        width: 500px;
+        margin: auto;
+        height: 50px;
+        margin-top: 10px;
+        color:#17c52e;
+
+    }
+
+    &_VerifyButton {
+        width: 300px;
+        margin: auto;
+        height: 50px;
+        margin-top: 35px;
+        border-radius: 5px;
+        background-color: rgba(61, 61, 59, 0.664);
+
+        border: none;
+
+    
+
+    }
+    &_VerifyButton:hover {
+        
+    
+        background-color: #17c52e;
+        transition: ease-in-out 0.3s ;
+       
+    }
+
+
+    
+
+}
 
 
 
 
+//If verified craftring section
 //RECIPES HERE
 .Recipes {
     height: 325px;
@@ -61,6 +126,7 @@ h1 {
     width: 80%;
     height: 400px;
     margin: auto;
+    margin-top: 50px;
     // background-color: red;
 
 }
@@ -128,4 +194,9 @@ p {
     position: absolute;
     right: 0;
     top: 570px;
+}
+
+
+username {
+    color: #74c75c;
 }

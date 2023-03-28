@@ -8,6 +8,17 @@ import { MapComponent } from './map/map.component';
 import { CraftingComponent } from './crafting/crafting.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ItemComponent } from './item/item.component'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AuthOnlyDirective } from './directives/auth-only.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatInputModule } from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -15,13 +26,22 @@ import { ItemComponent } from './item/item.component'
     LandingComponent,
     MapComponent,
     CraftingComponent,
-    ItemComponent
+    ItemComponent,
+    AuthOnlyDirective,
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

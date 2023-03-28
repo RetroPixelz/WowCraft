@@ -81,9 +81,9 @@
 .StockSection {
     width: 80%;
     margin: auto;
-    height: 800px;
+    height: 900px;
     // background-color: red;
-    margin-top: 500px;
+    margin-top: 300px;
     
 }
 
@@ -150,12 +150,15 @@ h4 {
 
 .ItemSection {
     width: 100%;
-    margin-top: 100px;
+    height: 730px;
+    margin-top: 50px;
     min-height: 40px;
     display: flex;
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
