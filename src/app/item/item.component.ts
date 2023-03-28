@@ -21,6 +21,8 @@ export class ItemComponent {
     })
   }
 
+  
+
 
 
   //define var that we get from parent (map Component)

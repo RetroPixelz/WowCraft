@@ -151,7 +151,11 @@ h4 {
 .ItemSection {
     width: 100%;
     margin-top: 100px;
+    min-height: 40px;
     display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 
