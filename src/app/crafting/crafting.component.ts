@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Recipe } from '../models/recipe';
+import { CraftService } from '../services/craft.service';
 import { VerifyService } from '../services/verify.service';
 
 
@@ -10,7 +12,7 @@ import { VerifyService } from '../services/verify.service';
 })
 export class CraftingComponent {
 
-  constructor (private verify: VerifyService) {}
+  constructor (private verify: VerifyService, private craft: CraftService) {}
 
   //is user verified
   isVerified = false;
@@ -18,6 +20,12 @@ export class CraftingComponent {
   //Formcontrols
   username = new FormControl("");
   password = new FormControl("");
+
+  //list of recipes var
+  listOfRecipes: Recipe[] = [];
+
+  isCrafting = false;
+
 
   CheckVerification() {
     this.verify.CheckVerification(this.username.value!, this.password.value!).subscribe((Response) => {
@@ -28,6 +36,27 @@ export class CraftingComponent {
       } else {
         console.log("Verified Unsuccessfull")
         this.isVerified = false;
+      }
+    })
+  }
+
+  getRecipes() {
+    this.craft.getAllRecipes().subscribe((data) => {
+      this.listOfRecipes = data
+      console.log(data)
+    })
+  }
+
+  ngOnInit() {
+    this.getRecipes()
+  }
+
+  craftRecipe(recipeId: string) {
+    this.isCrafting = true
+    this.craft.craftRecipe(recipeId).subscribe((Response) => {
+      this.isCrafting = false
+      if(Response.success) {
+        this.getRecipes();
       }
     })
   }
