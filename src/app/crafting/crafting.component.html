@@ -30,7 +30,7 @@
     </div>
 
     <!-- appAuthOnly [isVerified]="isVerified" -->
-    <div   class="CraftingPageSection">
+    <div  appAuthOnly [isVerified]="isVerified" class="CraftingPageSection">
 
 
         <div class="Recipes">
@@ -71,10 +71,8 @@
                     <!-- <p>Current Amount: {{recipe.amount}}</p> -->
                     
                         
-                    
-                </div>
                 
-
+                </div>
             </div>
         </div>
 
@@ -117,30 +115,5 @@
 
     </div>
 
-
-    <!-- CLASS STUFF -->
-<!-- 
-    <p *ngIf="isCrafting">is Crafting...</p>
-    <div class="craft-item" *ngFor="let recipe of listOfRecipes">
-        <img [ngSrc]="recipe.image" width="50" height="50" priority/>
-        <h2>{{recipe.title}}</h2>
-        <h5>{{recipe.description}}</h5>
-        
-        <h6>Ingredients:</h6>
-        <ul>
-            <li *ngFor="let ingredient of recipe.ingredients">
-                <span>{{ingredient.amountNeeded}} x </span>
-                <span>{{ingredient.inventoryId.title}}</span> 
-                <span>({{ingredient.inventoryId.amount}} available)</span>
-
-            </li>
-        </ul>
-        <div class="craft-button">
-            <p>Current Amount: {{recipe.amount}}</p>
-            <button (click)="craftRecipe(recipe._id!)" [disabled]="isCrafting" *ngIf="recipe.craftable" class="update-btn" mat-flat-button color="accent">Craft</button>
-            <button *ngIf="!recipe.craftable" class="update-btn" mat-flat-button color="disabled">Missing Ingredients</button>
-
-        </div> 
-</div> -->
 
 </div>

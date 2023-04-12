@@ -14,8 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { ItemtwoComponent } from './itemtwo/itemtwo.Component';
-import { ItemthreeComponent } from './itemthree/itemthree.Component'
+import { ItemtwoComponent } from './itemtwo/itemtwo.component';
+import { ItemthreeComponent } from './itemthree/itemthree.component';
+import { LoginComponent } from './login/login.component'
 
 
 
@@ -31,7 +32,8 @@ import { ItemthreeComponent } from './itemthree/itemthree.Component'
     ItemComponent,
     AuthOnlyDirective,
     ItemtwoComponent,
-    // ItemthreeComponent
+    ItemthreeComponent,
+    LoginComponent
 
     
   ],
