@@ -1,0 +1,187 @@
+
+
+.Item {
+    width: 200px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+    margin-left: 10px;
+    float: left;
+    margin-top: 10px;
+}
+
+
+
+.ItemImage {
+    width: 150px;
+    height: 150px;
+    background-image: url(../../assets/potion.webp);
+    background-size: cover;
+    margin: auto;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    // margin-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.Quantity {
+
+    display: flex;
+    flex-direction: row;
+    // background-color: red;
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+    // gap: px;
+    margin-top: 20px;
+
+    // width: 80%;
+    // height: 40px;
+    // display: flex;
+}
+
+
+.Less {
+    display: 1;
+    width: 40px;
+    height: 85%;
+    font-size: 20px;
+    background-color: rgb(107, 107, 107);
+    text-align: center;
+    color: white;
+    padding-top: 2px;
+    border-radius: 5px;
+}
+
+.Amount {
+    display: 1;
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+}
+
+.More {
+    display: 1;
+    width: 40px;
+    height: 85%;
+    font-size: 20px;
+    background-color: rgb(107, 107, 107);
+    text-align: center;
+    color: white;
+    padding-top: 2px;
+    border-radius: 5px;
+
+}
+
+.updateButton {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(61, 61, 59, 0.664);
+    flex-basis: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 8px;
+}
+
+.updateButton:hover {
+    background-color: #74c75c;
+    // color: black;
+}
+
+
+
+
+
+
+
+// .item{
+//     display: flex;
+//     flex-direction: column;
+//     width: 340px;
+//     border-radius: 8px;
+//     aspect-ratio: 1/1;
+//     background-color: rgb(15, 15, 15);
+//     overflow: hidden;
+//     padding: 10px;
+//     gap: 10px;
+   
+
+//     &_image{
+//         display: flex;
+//         width: 100%;
+//         // background-color: blue;
+//         height: 60%;
+//         overflow: hidden;
+//         align-items: center;
+//         justify-content: center;
+
+//         &_img{
+//             width: 80%;
+//             object-fit: cover;
+//             aspect-ratio: 16/9;
+//         }
+//     }
+
+//     &_heading{
+//         font-size: 18px;
+//         color: white;
+//     }
+//     &_description{
+//         color: white;
+//         font-size: 14px;
+//     }
+
+//     &_buttonsContainer{
+//         display: flex;
+//         flex-direction: row;
+//         background-color: red;
+//         flex-basis: 20%;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 10px;
+
+//         &_button{
+//             font-size: 55px;
+//             // background-color: red;
+//             height: fit-content;
+//             justify-content: center;
+//             align-items: center;
+//             color: white;
+//         }
+
+//         &_amount{
+//             font-size: 20px;
+//             color: white;
+//             // background-color: red;
+//         }
+//     }
+
+//     &_updateButton {
+//         display: flex;
+//         flex-direction: row;
+//         background-color: rgb(238, 255, 0);
+//         flex-basis: 20%;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 10px;
+//     }
+// }

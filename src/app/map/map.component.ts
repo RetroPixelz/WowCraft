@@ -7,25 +7,43 @@ import { ItemdbService } from '../services/itemdb.service';
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
-  providers: [ItemdbService]
 })
 
 export class MapComponent {
   
+Ogrimmar = false
+Stormwind = false
+ThunderBluff = false
 
-//   constructor (private itemService: ItemdbService) {}
+//maak 3 cick functions, een vir elke location en dan set die location var to true
 
-//   items: Item[] = []
+  constructor() {}
+    
+ngOnInit() {
 
-  
+}
 
-//   // ListOfItems = [{value:"bleh", }, {value:"blah", }, {value:"bluh", }]
-  
+LocationOne() {
+  this.Ogrimmar = true;
+  this.Stormwind = false;
+  this.ThunderBluff = false;
+  console.log("clicked");
+}
 
-// ngOnInit() {
-//   this.itemService.getAllItems().subscribe((data) => {
-//     this.items = data;
-//   })
-// }
+LocationTwo() {
+  this.Ogrimmar = false;
+  this.Stormwind = true;
+  this.ThunderBluff = false;
+
+  console.log("clicked 2");
+}
+
+LocationThree() {
+  this.Ogrimmar = false;
+  this.Stormwind = false;
+  this.ThunderBluff = true;
+  console.log("clicked 3");
+}
+
 
 }

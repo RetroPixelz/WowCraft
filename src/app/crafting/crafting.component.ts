@@ -60,6 +60,7 @@ export class CraftingComponent {
       }
     })
   }
+  
 
 // ngoninit of jwt is verfied then set isverified to true in sessionStorage
 }

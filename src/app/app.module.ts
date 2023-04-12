@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ItemtwoComponent } from './itemtwo/itemtwo.Component';
+import { ItemthreeComponent } from './itemthree/itemthree.Component'
 
 
 
@@ -28,6 +30,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     CraftingComponent,
     ItemComponent,
     AuthOnlyDirective,
+    ItemtwoComponent,
+    // ItemthreeComponent
+
     
   ],
   imports: [

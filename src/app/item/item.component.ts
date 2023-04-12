@@ -14,6 +14,8 @@ export class ItemComponent {
   constructor (private itemService: ItemdbService) {}
 
   items: Item[] = []
+  
+
 
   ngOnInit() {
     this.itemService.getAllItems().subscribe((data) => {
@@ -21,11 +23,8 @@ export class ItemComponent {
     })
   }
 
-  
-
-
-
   //define var that we get from parent (map Component)
   @Input() itemObject = {value: ""}
 
 }
+
