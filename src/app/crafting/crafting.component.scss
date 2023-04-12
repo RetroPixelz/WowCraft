@@ -72,7 +72,7 @@
 //If verified craftring section
 //RECIPES HERE
 .Recipes {
-    height: 325px;
+    height: 800px;
     width: 80%;
     margin: auto;
     margin-top: 100px;
@@ -83,26 +83,73 @@ h1 {
 }
 
 .craftingItemSection {
-    width: 100%;
+    width: 95%;
     height: 80%;
     margin-top: 20px;
-    display: flex;
+    margin: auto;
+    // display: flex;
+    // background-color: red;
+    // overflow-y: hidden;
+   
     overflow-x: scroll;
-    overflow-y: hidden;
+    // overflow-y: hidden;
 }
 
 .CraftingItem {
     margin-left: 50px;
-    width: 125px;
-    height: 250px;
+    width: 400px;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 5px;
+    float: left;
+    margin-top: 20px;
+}
+
+.CraftingItemDetails {
+    margin: auto;
+    // margin-top: -15px;
+    width: 95%;
+    height: 70%;
+    // background-color: blue;
+    display: flex;
+    
+}
+
+.RecipeName {
+    margin-left: 15px;
+    max-width: 260px;
+    // background-color: red;
+}
+
+.ingredientsneeded {
+    margin-left: 25px;
+    color: white;
+}
+
+.CraftingButton {
+    width: 100%;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
+    border: 0.1px solid white;
+    // border: none;
+    // margin-top: 25px;
+    
+    padding-top: 5px;
+   
+    color: white;
+}
+
+.CraftingButton:hover {
+    background: #74c75c;
 }
 
 .CraftingImage {
-    background-image: url(../../assets/potion.webp);
+    // background-image: url(../../assets/potion.webp);
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin: auto;
+    // margin: auto;
     margin-top: 25px;
 }
 
@@ -163,19 +210,7 @@ p {
     padding-top: 10px;
 }
 
-.CraftingButton {
-    width: 250px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 15px;
-    border: 1px solid white;
-    margin-top: 25px;
-    padding-top: 5px;
-}
 
-.CraftingButton:hover {
-    background: #74c75c;
-}
 
 .Decor5 {
     background-image: url(../../assets/Decor5.png);
