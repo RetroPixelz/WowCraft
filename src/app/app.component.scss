@@ -33,4 +33,24 @@ margin: 0;
     text-decoration: underline ;
   }
 
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    
+   position: fixed;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    /* background-color: #1b1b1bb9; */
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+
+  }
+
   

@@ -1,5 +1,6 @@
 <div class="BackGround">
-
+    <app-navigation></app-navigation>
+    
 
     <!-- <div appAuthOnly [isVerified]="!isVerified" class="VerifyFirst">
 
@@ -22,6 +23,13 @@
     </div> -->
 
     <!-- appAuthOnly [isVerified]="isVerified" -->
+
+    <div class="LocationNav">
+        <div (click)="LocationOne()" class="LocationOne"><h4>Ogrimmar</h4></div>
+        <div (click)="LocationTwo()" class="LocationTwo"><h4>StormWind</h4></div>
+        <div (click)="LocationThree()" class="LocationThree"><h4>Thunder Bluff</h4></div>
+
+    </div>
     <div   class="CraftingPageSection">
 
 
@@ -107,5 +115,6 @@
 
     </div>
 
+    
 
 </div>

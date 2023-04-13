@@ -17,7 +17,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { ItemtwoComponent } from './itemtwo/itemtwo.component';
 import { ItemthreeComponent } from './itemthree/itemthree.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component'
+import { RegisterComponent } from './register/register.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { RecipeComponent } from './recipe/recipe.component';
+import { RecipetwoComponent } from './recipetwo/recipetwo.component';
+import { RecipethreeComponent } from './recipethree/recipethree.component'
 
 
 
@@ -35,7 +39,11 @@ import { RegisterComponent } from './register/register.component'
     ItemtwoComponent,
     ItemthreeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavigationComponent,
+    RecipeComponent,
+    RecipetwoComponent,
+    RecipethreeComponent
 
     
   ],

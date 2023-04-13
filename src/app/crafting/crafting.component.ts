@@ -12,44 +12,31 @@ import { VerifyService } from '../services/verify.service';
 })
 export class CraftingComponent {
 
-  constructor (private verify: VerifyService, private craft: CraftService) {}
+  constructor (private craft: CraftService) {}
 
-  //is user verified
-  // isVerified = false;
+  Ogrimmar = false
+  Stormwind = false
+  ThunderBluff = false
+  
 
-  // //Formcontrols
-  // username = new FormControl("");
-  // password = new FormControl("");
-
-  //list of recipes var
   listOfRecipes: Recipe[] = [];
 
   isCrafting = false;
 
 
-  // CheckVerification() {
-  //   this.verify.CheckVerification(this.username.value!, this.password.value!).subscribe((Response) => {
-  //     if(Response.success) {
-  //       //store jwt in storage
-  //       console.log("Verified Successfully")
-  //       this.isVerified = true;
-  //     } else {
-  //       console.log("Verified Unsuccessfull")
-  //       this.isVerified = false;
-  //     }
-  //   })
-  // }
+
 
   getRecipes() {
+    this.isCrafting = true
     this.craft.getAllRecipes().subscribe((data) => {
       this.listOfRecipes = data
+    this.isCrafting = false
+
       console.log(data)
     })
   }
 
-  ngOnInit() {
-    this.getRecipes()
-  }
+ 
 
   craftRecipe(recipeId: string) {
     this.isCrafting = true
@@ -61,6 +48,39 @@ export class CraftingComponent {
     })
   }
   
+
+
+
+  
+LocationOne() {
+  this.Ogrimmar = true;
+  this.Stormwind = false;
+  this.ThunderBluff = false;
+  console.log("clicked");
+}
+
+LocationTwo() {
+  this.Ogrimmar = false;
+  this.Stormwind = true;
+  this.ThunderBluff = false;
+
+  console.log("clicked 2");
+}
+
+LocationThree() {
+  this.Ogrimmar = false;
+  this.Stormwind = false;
+  this.ThunderBluff = true;
+  console.log("clicked 3");
+}
+
+ngOnInit() {
+  this.getRecipes()
+  this.LocationOne(),
+  this.LocationTwo(),
+  this.LocationThree()
+}
+
 
 // ngoninit of jwt is verfied then set isverified to true in sessionStorage
 }
