@@ -15,13 +15,13 @@ Ogrimmar = false
 Stormwind = false
 ThunderBluff = false
 
+loading = false
+
 //maak 3 cick functions, een vir elke location en dan set die location var to true
 
-  constructor() {}
+constructor() {}
     
-ngOnInit() {
 
-}
 
 LocationOne() {
   this.Ogrimmar = true;
@@ -43,6 +43,12 @@ LocationThree() {
   this.Stormwind = false;
   this.ThunderBluff = true;
   console.log("clicked 3");
+}
+
+ngOnInit() {
+ this.LocationOne(),
+ this.LocationTwo(),
+ this.LocationThree()
 }
 
 

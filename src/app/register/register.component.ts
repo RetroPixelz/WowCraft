@@ -4,11 +4,11 @@ import { CraftService } from '../services/craft.service';
 import { VerifyService } from '../services/verify.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
-export class LoginComponent {
+export class RegisterComponent {
 
   constructor (private verify: VerifyService) {}
 
@@ -33,5 +33,4 @@ export class LoginComponent {
       }
     })
   }
-
 }

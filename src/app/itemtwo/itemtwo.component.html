@@ -1,5 +1,7 @@
 <div *ngFor="let item of itemstwo" class="Item">
-    <div class="ItemImage">{{item.image}}</div>
+    <!-- <div class="ItemImage">{{item.image}}</div> -->
+    <img class="ItemImage" [src]="item.image" >
+
     <!-- <img class="ItemImage" [ngSrc]="item.image"> -->
 
     <h3>{{item.title}}</h3>

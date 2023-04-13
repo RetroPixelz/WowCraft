@@ -15,11 +15,11 @@ export class CraftingComponent {
   constructor (private verify: VerifyService, private craft: CraftService) {}
 
   //is user verified
-  isVerified = false;
+  // isVerified = false;
 
-  //Formcontrols
-  username = new FormControl("");
-  password = new FormControl("");
+  // //Formcontrols
+  // username = new FormControl("");
+  // password = new FormControl("");
 
   //list of recipes var
   listOfRecipes: Recipe[] = [];
@@ -27,18 +27,18 @@ export class CraftingComponent {
   isCrafting = false;
 
 
-  CheckVerification() {
-    this.verify.CheckVerification(this.username.value!, this.password.value!).subscribe((Response) => {
-      if(Response.success) {
-        //store jwt in storage
-        console.log("Verified Successfully")
-        this.isVerified = true;
-      } else {
-        console.log("Verified Unsuccessfull")
-        this.isVerified = false;
-      }
-    })
-  }
+  // CheckVerification() {
+  //   this.verify.CheckVerification(this.username.value!, this.password.value!).subscribe((Response) => {
+  //     if(Response.success) {
+  //       //store jwt in storage
+  //       console.log("Verified Successfully")
+  //       this.isVerified = true;
+  //     } else {
+  //       console.log("Verified Unsuccessfull")
+  //       this.isVerified = false;
+  //     }
+  //   })
+  // }
 
   getRecipes() {
     this.craft.getAllRecipes().subscribe((data) => {

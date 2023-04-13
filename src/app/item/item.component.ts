@@ -15,13 +15,23 @@ export class ItemComponent {
 
   items: Item[] = []
   
+  loading = false
+  
+
+
+  getItems() {
+    this.loading = true
+    this.itemService.getAllItems().subscribe((data) => {
+      this.items = data;
+      this.loading = false
+    })
+  }
 
 
   ngOnInit() {
-    this.itemService.getAllItems().subscribe((data) => {
-      this.items = data;
-    })
+  this.getItems()    
   }
+
 
   //define var that we get from parent (map Component)
   @Input() itemObject = {value: ""}

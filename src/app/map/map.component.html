@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<div class="StockSection"  ng-controller="locationCtrl" >
+<div class="StockSection"   >
 
     <div class="LocationNav">
         <div (click)="LocationOne()" class="LocationOne"><h4>Ogrimmar</h4></div>
@@ -22,12 +22,12 @@
         <div (click)="LocationThree()" class="LocationThree"><h4>Thunder Bluff</h4></div>
 
     </div>
-
+    <!-- <iframe *ngIf="loading" src="https://giphy.com/embed/xUA7b3JLpn1XiBYcqk" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/imoji-world-of-warcraft-xUA7b3JLpn1XiBYcqk">via GIPHY</a></p> -->
     <!-- <div *ngIf="Ogrimmar; else ThunderBluff" class="ItemSection"> -->
     <!-- <div *ngIf="Ogrimmar || StormWind || ThunderBluff" class="ItemSection">
         <h1>ogrimmar</h1>
     </div> -->
-
+    
     <div *ngIf="Ogrimmar" class="ItemSection">
         
         <app-item></app-item>

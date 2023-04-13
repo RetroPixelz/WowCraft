@@ -16,7 +16,8 @@ import { MatInputModule } from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ItemtwoComponent } from './itemtwo/itemtwo.component';
 import { ItemthreeComponent } from './itemthree/itemthree.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component'
 
 
 
@@ -33,7 +34,8 @@ import { LoginComponent } from './login/login.component'
     AuthOnlyDirective,
     ItemtwoComponent,
     ItemthreeComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
 
     
   ],
