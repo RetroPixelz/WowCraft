@@ -10,10 +10,11 @@ export class LandingComponent {
 
   constructor (private verify: VerifyService) {}
 
+  Verified = sessionStorage.getItem("details")
   
 
 ngOnInit() {
-
+  console.log(this.Verified)
 }
 
 }

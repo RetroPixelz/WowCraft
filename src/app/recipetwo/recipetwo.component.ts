@@ -36,6 +36,8 @@ export class RecipetwoComponent {
     this.isCrafting = true
     this.craft.craftRecipe(recipeId).subscribe((Response) => {
       this.isCrafting = false
+    this.isLoading = false
+
       if(Response.success) {
         this.getRecipes();
       }

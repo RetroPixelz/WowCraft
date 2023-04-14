@@ -27,6 +27,7 @@ export class LoginComponent {
 
   notVerified = false
   
+  details = ""
 
   CheckVerification() {
     try {
@@ -53,7 +54,11 @@ export class LoginComponent {
   
   }
 
-  
+  ngOnInit()  {
+    // sessionStorage.setItem("isVerified", "this.isVerified" )
+    sessionStorage.setItem("details", JSON.stringify(this.details))
+
+  }
 
 }
 

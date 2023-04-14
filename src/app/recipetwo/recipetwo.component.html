@@ -1,4 +1,6 @@
 <img *ngIf="isLoading" src="assets/Loading.gif" class="loading">
+<div *ngIf="isCrafting"  class="busyCrafting"><p >Busy Crafting...</p></div>
+
 
 
 <div class="CraftingItem" *ngFor="let recipe of listOfRecipes">

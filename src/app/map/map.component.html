@@ -2,44 +2,56 @@
     <app-navigation></app-navigation>
 
 
-<div class="MapSectioning">
-    <div class="MapHere">
-        <a > <div class="Horde"></div> </a>
-        <a > <div class="Alliance"></div> </a>
-        <a > <div class="ThunderBluff"></div> </a>
-       
-
-    </div>
-    <div class="IllustrationTwo">
+    <div class="MapSectioning">
+        <div class="MapHere">
+            <a>
+                <div class="Horde"></div>
+            </a>
+            <a>
+                <div class="Alliance"></div>
+            </a>
+            <a>
+                <div class="ThunderBluff"></div>
+            </a>
+        </div>
         
+        <div class="IllustrationTwo">
 
-    </div>
-</div>
 
-<div class="StockSection"   >
-
-    <div class="LocationNav">
-        <div (click)="LocationOne()" class="LocationOne"><h4>Ogrimmar</h4></div>
-        <div (click)="LocationTwo()" class="LocationTwo"><h4>StormWind</h4></div>
-        <div (click)="LocationThree()" class="LocationThree"><h4>Thunder Bluff</h4></div>
-
-    </div>
-    
-    
-    <div *ngIf="Ogrimmar" class="ItemSection">
-        
-        <app-item></app-item>
-
-    </div>
-    <div *ngIf="Stormwind" class="ItemSection">
-        <app-itemtwo></app-itemtwo>
-
-    </div>
-    <div *ngIf="ThunderBluff" class="ItemSection">
-        <app-itemthree></app-itemthree>
+        </div>
 
     </div>
 
-</div>
+    <div class="StockSection">
+
+        <div class="LocationNav">
+            <div (click)="LocationOne()" class="LocationOne">
+                <h4>Ogrimmar</h4>
+            </div>
+            <div (click)="LocationTwo()" class="LocationTwo">
+                <h4>StormWind</h4>
+            </div>
+            <div (click)="LocationThree()" class="LocationThree">
+                <h4>Thunder Bluff</h4>
+            </div>
+
+        </div>
+
+
+        <div *ngIf="Ogrimmar" class="ItemSection">
+
+            <app-item></app-item>
+
+        </div>
+        <div *ngIf="Stormwind" class="ItemSection">
+            <app-itemtwo></app-itemtwo>
+
+        </div>
+        <div *ngIf="ThunderBluff" class="ItemSection">
+            <app-itemthree></app-itemthree>
+
+        </div>
+
+    </div>
 
 </div>

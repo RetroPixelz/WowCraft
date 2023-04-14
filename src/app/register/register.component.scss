@@ -4,6 +4,7 @@
     margin: auto;
     margin-top: 150px;
     // background-color: red;
+    position: relative;
 }
 
 .loginText{
@@ -65,3 +66,16 @@
     text-decoration: underline;
    
 } 
+
+.usernameModal {
+    
+    position: absolute;
+    left: 325px;
+    top: 460px;
+    width: 300px;
+    height: 30px;
+    background-color: rgba(18, 197, 27, 0.507);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 15px;
+}

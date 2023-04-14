@@ -18,7 +18,7 @@ export class CraftingComponent {
   Stormwind = false
   ThunderBluff = false
   
-  
+  isVerified = false
 
   listOfRecipes: Recipe[] = [];
 
@@ -26,13 +26,12 @@ export class CraftingComponent {
 
   isLoading = false;
 
-// doen n count function om die items te tel in die recipe array
-
+  Verified = sessionStorage.getItem("isVerified")
 
   getRecipes() {
-    // add loading animation here 
+  
     this.isLoading = true
-    //
+
     this.craft.getAllRecipes().subscribe((data) => {
     this.listOfRecipes = data
     this.isCrafting = false
@@ -53,8 +52,6 @@ export class CraftingComponent {
     })
   }
   
-
-
 
   
 LocationOne() {
@@ -83,8 +80,7 @@ ngOnInit() {
   this.LocationOne(),
   this.LocationTwo(),
   this.LocationThree()
+  console.log(this.Verified)
 }
 
-
-// ngoninit of jwt is verfied then set isverified to true in sessionStorage
 }

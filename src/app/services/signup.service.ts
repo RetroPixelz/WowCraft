@@ -15,9 +15,9 @@ export class SignupService {
   url: string = "http://localhost:3000/user/signup"
 
   //method to check user verified
-  signUp(username: string, password: string, proffession: string):Observable<any> {
+  signUp(username: string, password: string, profession: string):Observable<any> {
 
-    return this.http.post<any>(this.url, {username, password, proffession})
+    return this.http.post<any>(this.url, {username, password, profession})
     .pipe(
       retry(2),
       catchError(this.errorHandle.handleError)
