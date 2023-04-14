@@ -5,7 +5,7 @@
 <br />
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Justin-OwiStudent/WowCraft)
-![GitHub watchers](https://img.shields.io/github/watchers/Justin-OwiStudent/WowCraft
+![GitHub watchers](https://img.shields.io/github/watchers/Justin-OwiStudent/WowCraft)
 ![GitHub language count](https://img.shields.io/github/languages/count/Justin-OwiStudent/WowCraft)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Justin-OwiStudent/WowCraft)
 
@@ -27,7 +27,7 @@
     
    <br />
    <br />
-   <a href="">View Demo</a>
+   <a href="https://drive.google.com/file/d/1j6DtiOVNjZtj-PM3QdH7revrMJuhhsdm/view?usp=sharing">View Demo</a>
     ·
     <a href="https://github.com/Justin-OwiStudent/WowCraft/issues">Report Bug</a>
     ·
@@ -107,6 +107,14 @@ Here are a couple of ways to clone this repo:
     ```sh
     npm install
     ```
+3.  Run Application </br>
+    Run the following in the command-line to run the application:
+
+    ```sh
+    ng serve
+    ```
+
+
 
 <!-- FEATURES AND FUNCTIONALITY-->
 <!-- You can add the links to all of your imagery at the bottom of the file as references -->
@@ -214,7 +222,7 @@ The `Development Process` is the technical implementations and functionality don
 
 To see a run through of the application, click below:
 
-[View Demonstration]()
+[View Demonstration](https://drive.google.com/file/d/1j6DtiOVNjZtj-PM3QdH7revrMJuhhsdm/view?usp=sharing)
 
 See the [open issues](https://github.com/Justin-OwiStudent/WowCraft/issues) for a list of proposed features (and known issues).
 
