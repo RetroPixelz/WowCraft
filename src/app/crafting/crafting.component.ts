@@ -12,29 +12,34 @@ import { VerifyService } from '../services/verify.service';
 })
 export class CraftingComponent {
 
-  constructor (private craft: CraftService) {}
+  constructor (private craft: CraftService, private verify: VerifyService) {}
 
   Ogrimmar = false
   Stormwind = false
   ThunderBluff = false
+  
   
 
   listOfRecipes: Recipe[] = [];
 
   isCrafting = false;
 
+  isLoading = false;
 
+// doen n count function om die items te tel in die recipe array
 
 
   getRecipes() {
-    this.isCrafting = true
+    // add loading animation here 
+    this.isLoading = true
+    //
     this.craft.getAllRecipes().subscribe((data) => {
-      this.listOfRecipes = data
+    this.listOfRecipes = data
     this.isCrafting = false
-
-      console.log(data)
+    this.isLoading = false
+    
     })
-  }
+  } 
 
  
 
@@ -56,7 +61,7 @@ LocationOne() {
   this.Ogrimmar = true;
   this.Stormwind = false;
   this.ThunderBluff = false;
-  console.log("clicked");
+  
 }
 
 LocationTwo() {
@@ -64,14 +69,13 @@ LocationTwo() {
   this.Stormwind = true;
   this.ThunderBluff = false;
 
-  console.log("clicked 2");
 }
 
 LocationThree() {
   this.Ogrimmar = false;
   this.Stormwind = false;
   this.ThunderBluff = true;
-  console.log("clicked 3");
+ 
 }
 
 ngOnInit() {

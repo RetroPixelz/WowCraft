@@ -2,28 +2,6 @@
     <app-navigation></app-navigation>
     
 
-    <!-- <div appAuthOnly [isVerified]="!isVerified" class="VerifyFirst">
-
-        <div class="VerifySection">
-        <p class="pleaseVerifyText">Please verify yourself as a crafting user:</p>
-
-        <mat-form-field  class="VerifySection_UsernameFeild">
-            <mat-label>Username</mat-label>
-            <input [formControl]="username" matInput placeholder="Ex. Jeff" type="text" >
-          </mat-form-field>
-          
-          <mat-form-field class="VerifySection_PasswordFeild">
-            <mat-label>Password</mat-label>
-            <input [formControl]="password" matInput placeholder="Ex. Jeff@123" type="text" >
-          </mat-form-field>
-
-        <button (click)="CheckVerification()" class="VerifySection_VerifyButton">Verify!</button>
-        </div>
-        
-    </div> -->
-
-    <!-- appAuthOnly [isVerified]="isVerified" -->
-
     <div class="LocationNav">
         <div (click)="LocationOne()" class="LocationOne"><h4>Ogrimmar</h4></div>
         <div (click)="LocationTwo()" class="LocationTwo"><h4>StormWind</h4></div>
@@ -31,6 +9,7 @@
 
     </div>
     <div   class="CraftingPageSection">
+        
 
 
         <div class="Recipes">
@@ -38,17 +17,22 @@
 
             <!-- <h1> Hi {{username.value | uppercase }}, Have a look at all the available recipes here!</h1> -->
 
-            <div class="craftingItemSection">
+            <img *ngIf="isLoading" src="assets/Loading.gif" class="loading">
+            <div *ngIf="isCrafting"  class="busyCrafting"><p >Busy Crafting...</p></div>
+                   
+                <div>
 
-                <div class="CraftingItem" *ngFor="let recipe of listOfRecipes">
+                </div>
+                <app-recipe></app-recipe>
+
+                <!-- <div class="CraftingItem" *ngFor="let recipe of listOfRecipes">
                     <div class="CraftingItemDetails">
                         <img class="CraftingImage" [ngSrc]="recipe.image" width="50" height="50" priority/>
 
-                        <!-- <h2>{{recipe.title}}</h2>
-                        <h5>{{recipe.description}}</h5> -->
+                   
                         <div >
                             <p class="RecipeName">{{recipe.title}}</p>
-                            <!-- <p class="RecipeName">{{recipe.description}}</p> -->
+                           
 
                             <ul class="ingredientsneeded">
                                 <li *ngFor="let ingredient of recipe.ingredients">
@@ -58,7 +42,7 @@
                                     
                     
                                 </li>
-                    <!-- <p>Current Amount: {{recipe.amount}}</p> -->
+                   
                     <p>Current Amount Crafted: {{recipe.amount}}</p>
                             </ul>
                         </div>
@@ -68,46 +52,11 @@
                     <button (click)="craftRecipe(recipe._id!)" [disabled]="isCrafting" *ngIf="recipe.craftable" class="CraftingButton">Craft!</button>
                     <button *ngIf="!recipe.craftable" class="CraftingButton">Missing Ingreients!</button>
 
-                    <!-- <p>Current Amount: {{recipe.amount}}</p> -->
-                    
-                        
-                
-                </div>
-            </div>
+                </div> -->
+            
         </div>
 
-        <!-- <div class="CraftingSection">
-            <div class="CraftingBlock">
-
-                <div class="CraftingItemOne">
-                    <div class="CraftingitemImage">
-
-                    </div>
-                    <p>Vial</p>
-                </div>
-
-                <div class="TextHere">+</div>
-
-                <div class="CraftingItemOne">
-                    <div class="CraftingitemImage">
-
-                    </div>
-                    <p>SilverLeaf</p>
-                </div>
-
-                <div class="TextHere">=</div>
-
-                <div class="CraftingItemOne">
-                    <div class="CraftingitemImage">
-
-                    </div>
-                    <p>Potion of lesser health</p>
-                </div>
-            </div>
-            <div class="CraftingButton">
-                <p>Craft Potion</p>
-            </div>
-        </div> -->
+     
             <div class="Decor5">
 
             </div>

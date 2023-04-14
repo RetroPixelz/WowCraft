@@ -21,7 +21,8 @@ import { RegisterComponent } from './register/register.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { RecipetwoComponent } from './recipetwo/recipetwo.component';
-import { RecipethreeComponent } from './recipethree/recipethree.component'
+import { RecipethreeComponent } from './recipethree/recipethree.component';
+import { ModalComponent } from './modal/modal.component'
 
 
 
@@ -43,7 +44,8 @@ import { RecipethreeComponent } from './recipethree/recipethree.component'
     NavigationComponent,
     RecipeComponent,
     RecipetwoComponent,
-    RecipethreeComponent
+    RecipethreeComponent,
+    ModalComponent
 
     
   ],

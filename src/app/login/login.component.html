@@ -1,23 +1,28 @@
 <div class="BackGround">
 
+ 
+
     <div class="loginSection">
 
         <div class="Loggin">
             <h1 class="loginText">Login</h1>
             <form class="loginForm">
-                <!-- <input placeholder="name">
-                <input placeholder="proffesion">
-                <input placeholder="password"> -->
+           
 
                 <mat-form-field  class="Username">
                     <mat-label>Username</mat-label>
                     <input [formControl]="username" matInput placeholder="Ex. Jeff" type="text" >
                   </mat-form-field>
+
+                  <div *ngIf="notVerified" class="usernameModal">Invalid username or password </div>
                   
                   <mat-form-field class="Proffession">
                     <mat-label>Password</mat-label>
                     <input [formControl]="password" matInput placeholder="Ex. Jeff@123" type="text" >
                   </mat-form-field>
+
+                 
+
 
 
 

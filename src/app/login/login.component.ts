@@ -25,6 +25,7 @@ export class LoginComponent {
 
   // returnUrl = LandingComponent
 
+  notVerified = false
   
 
   CheckVerification() {
@@ -34,12 +35,16 @@ export class LoginComponent {
    
         console.log("Verified Successfully")
         this.isVerified = true;
-        // this.router.navigateByUrl("/Landing");
+        
         this.router.navigateByUrl('/Landing')
       } else {
+        if(this.username.value === "") {
+          this.notVerified = true
+        }
         console.log("Verified Unsuccessfull")
         this.isVerified = false;
         this.router.navigateByUrl("/Login");
+        
         
 //Make an alert or ngif show something to say it failed
       }

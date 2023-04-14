@@ -1,241 +1,3 @@
-.CraftingPageSection{
-    height: 85vh;
-}
-
-//If not verified craftring section
-.VerifyFirst {
-    height: 85vh;
-    margin: auto;
-    width: 700px;
-}
-
-.VerifySection {
-    height: 400px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.438);
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 100px;
-  
-    
-
-    &_UsernameFeild {
-        width: 500px;
-        // margin: auto;
-        height: 75px;
-        margin-top: 80px;
-        color: #17c52e;
-    }
-
-    .mdc-text-field__input { 
-        color: rgb(255, 255, 255);
-    }
-
-    &_PasswordFeild {
-        width: 500px;
-        margin: auto;
-        height: 75px;
-        margin-top: 10px;
-        color:#17c52e;
-
-    }
-
-    &_VerifyButton {
-        width: 300px;
-        margin: auto;
-        height: 50px;
-        margin-top: 35px;
-        border-radius: 5px;
-        background-color: rgba(61, 61, 59, 0.664);
-
-        border: none;
-
-    
-
-    }
-    &_VerifyButton:hover {
-        
-    
-        background-color: #17c52e;
-        transition: ease-in-out 0.3s ;
-       color: white;
-    }
-
-
-    
-
-}
-
-
-
-
-//If verified craftring section
-//RECIPES HERE
-.Recipes {
-    height: 800px;
-    width: 80%;
-    margin: auto;
-    margin-top: 100px;
-}
-
-h1 {
-    color: white;
-}
-
-.craftingItemSection {
-    width: 95%;
-    
-    margin-top: 20px;
-    margin: auto;
-    // display: flex;
-    // background-color: red;
-    // overflow-y: hidden;
-   
-    overflow-x: scroll;
-    // overflow-y: hidden;
-}
-
-.CraftingItem {
-    margin-left: 50px;
-    width: 400px;
-    height: 220px;
-    background-color: rgba(0, 0, 0, 0.568);
-    border-radius: 5px;
-    float: left;
-    margin-top: 20px;
-}
-
-.CraftingItemDetails {
-    margin: auto;
-    // margin-top: -15px;
-    width: 95%;
-    height: 70%;
-    // background-color: blue;
-    display: flex;
-    
-}
-
-.RecipeName {
-    margin-left: 15px;
-    max-width: 260px;
-    // background-color: red;
-}
-
-.ingredientsneeded {
-    margin-left: 25px;
-    color: white;
-}
-
-.CraftingButton {
-    width: 100%;
-    height: 65px;
-    background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 5px;
-    border: 0.1px solid white;
-    // border: none;
-    // margin-top: 25px;
-    
-    padding-top: 5px;
-   
-    color: white;
-}
-
-.CraftingButton:hover {
-    background: #74c75c;
-}
-
-.CraftingImage {
-    // background-image: url(../../assets/potion.webp);
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-    // margin: auto;
-    margin-top: 25px;
-}
-
-.CraftingText {
-    width: 80%;
-    color: white;
-    margin: auto;
-    text-align: center;
-    font-size: 18px;
-    padding-top: 10px;
-}
-
-
-
-//CRAFTING HERE
-.CraftingPageSection {
- margin-top: 50px;
- height: 1200px;
-//  background-color: red;
-overflow: hidden;
- margin-bottom: 100px;
-}
-
-.CraftingSection {
-    width: 80%;
-    height: 400px;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.CraftingBlock{
-    width: 70%;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 50px;
-    border: 0.5px solid white;
-    display: flex;
-}
-
-.CraftingItemOne {
-    width: 200px;
-    margin-left: 50px;
-}
-
-.TextHere {
-    margin-left: 50px;
-    margin-top: 125px;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-}
-
-.CraftingitemImage {
-    width: 100px;
-    height: 100px;
-    // background-image: url(../../assets/potion.webp);
-    background-size: cover;
-    margin: auto;
-    margin-top: 80px;
-}
-
-p {
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    padding-top: 10px;
-}
-
-
-
-.Decor5 {
-    background-image: url(../../assets/Decor5.png);
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    right: 0;
-    top: 570px;
-    position: fixed;
-}
-
-
-username {
-    color: #74c75c;
-}
-
 
 
 
@@ -303,26 +65,116 @@ h4 {
 }
 
 
+.CraftingPageSection {
+    margin-top: 50px;
+    height: 1200px;
+   //  background-color: red;
+   overflow: hidden;
+    margin-bottom: 100px;
+   }
 
-// //CLASSS STUFF
-// .craft-containers {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     width: 100%;
-// }
+.Recipes {
+    height: 800px;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}   
 
-// .craft-item {
-//     border: 1px solid #f2f2f2;
-//     border-radius: 5px;
-//     padding: 20px;
-//     min-width: 250px;
-//     margin: 10px
-// }
+.loading {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
 
-// .craft-button {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     align-items: baseline;
-// }
+.busyCrafting {
+    width: 250px;
+    height: 50px;
+    background-color: #17c52eb6;
+    border-radius: 15px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
+.CraftingItem {
+    margin-left: 50px;
+    width: 400px;
+    height: 220px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 5px;
+    float: left;
+    margin-top: 20px;
+}
+
+.CraftingItemDetails {
+    margin: auto;
+    // margin-top: -15px;
+    width: 95%;
+    height: 70%;
+    // background-color: blue;
+    display: flex;
+    
+}
+.CraftingImage {
+    // background-image: url(../../assets/potion.webp);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    // margin: auto;
+    margin-top: 25px;
+}
+
+.RecipeName {
+    margin-left: 15px;
+    max-width: 260px;
+    // background-color: red;
+}
+
+.ingredientsneeded {
+    margin-left: 25px;
+    color: white;
+}
+
+.CraftingButton {
+    width: 100%;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
+    border: 0.1px solid white;
+    // border: none;
+    // margin-top: 25px;
+    
+    padding-top: 5px;
+   
+    color: white;
+}
+
+.CraftingButton:hover {
+    background: #74c75c;
+}
+
+.Decor5 {
+    background-image: url(../../assets/Decor5.png);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 570px;
+    position: fixed;
+}
+
+
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-top: 10px;
+}
+
+
+
+
+

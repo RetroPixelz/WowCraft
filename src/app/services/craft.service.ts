@@ -9,7 +9,7 @@ export class CraftService {
 
   constructor(private http: HttpClient) {}
 
-  url = "http://localhost:3000/recipes"
+  url = "http://localhost:3000/recipe"
 
   //func to get all recipes
   getAllRecipes() {
