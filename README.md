@@ -16,7 +16,7 @@
 </br>
 <p align="center">
 
-  <a href="https://github.com/Justin-OwiStudent/WowCraft/assets/LOGO.png">
+  <a href="src/assets/LOGO.png">
     <img src="src/assets/icon.svg" alt="Logo" width="100px">
   </a>
   
