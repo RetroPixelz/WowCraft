@@ -26,26 +26,21 @@
 
 .CraftingItemDetails {
     margin: auto;
-    // margin-top: -15px;
     width: 95%;
     height: 70%;
-    // background-color: blue;
     display: flex;
     
 }
 .CraftingImage {
-    // background-image: url(../../assets/potion.webp);
     background-size: cover;
     height: 100px;
     width: 100px;
-    // margin: auto;
     margin-top: 25px;
 }
 
 .RecipeName {
     margin-left: 15px;
     max-width: 260px;
-    // background-color: red;
 }
 
 .ingredientsneeded {
@@ -59,11 +54,7 @@
     background-color: rgba(0, 0, 0, 0.432);
     border-radius: 5px;
     border: 0.1px solid white;
-    // border: none;
-    // margin-top: 25px;
-    
     padding-top: 5px;
-   
     color: white;
 }
 
@@ -77,11 +68,7 @@
     background-color: rgba(0, 0, 0, 0.432);
     border-radius: 5px;
     border: 0.1px solid white;
-    // border: none;
-    // margin-top: 25px;
-    
     padding-top: 5px;
-   
     color: white;
 }
 

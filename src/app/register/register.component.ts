@@ -14,10 +14,9 @@ export class RegisterComponent {
 
   constructor (private signup: SignupService, private router: Router) {}
 
-  //is user verified
+
   isVerified = false;
 
-  //Formcontrols
   username = new FormControl("");
   password = new FormControl("");
   profession = new FormControl("");
@@ -28,17 +27,16 @@ export class RegisterComponent {
   SignUpUser() {
     this.signup.signUp(this.username.value!, this.password.value!, this.profession.value!).subscribe((Response) => {
       if(Response.success) {
-        //store jwt in storage
+       
         console.log("Verified Successfully")
         this.isVerified = true;
-        // this.router.navigateByUrl('/Login')
+      
 
       } else {
         console.log("Verified Unsuccessfull")
         this.isVerified = false;
         this.notVerified = true
-        // this.router.navigateByUrl('/Login')
-
+   
       }
     })
   }

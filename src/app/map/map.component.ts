@@ -10,46 +10,46 @@ import { ItemdbService } from '../services/itemdb.service';
 })
 
 export class MapComponent {
-  
-Ogrimmar = false
-Stormwind = false
-ThunderBluff = false
 
-loading = false
+  Ogrimmar = false
+  Stormwind = false
+  ThunderBluff = false
 
-//maak 3 cick functions, een vir elke location en dan set die location var to true
-
-constructor() {}
-    
+  loading = false
 
 
-LocationOne() {
-  this.Ogrimmar = true;
-  this.Stormwind = false;
-  this.ThunderBluff = false;
-  console.log("clicked");
-}
 
-LocationTwo() {
-  this.Ogrimmar = false;
-  this.Stormwind = true;
-  this.ThunderBluff = false;
+  constructor() { }
 
-  console.log("clicked 2");
-}
 
-LocationThree() {
-  this.Ogrimmar = false;
-  this.Stormwind = false;
-  this.ThunderBluff = true;
-  console.log("clicked 3");
-}
 
-ngOnInit() {
- this.LocationOne(),
- this.LocationTwo(),
- this.LocationThree()
-}
+  LocationOne() {
+    this.Ogrimmar = true;
+    this.Stormwind = false;
+    this.ThunderBluff = false;
+    console.log("clicked");
+  }
+
+  LocationTwo() {
+    this.Ogrimmar = false;
+    this.Stormwind = true;
+    this.ThunderBluff = false;
+
+    console.log("clicked 2");
+  }
+
+  LocationThree() {
+    this.Ogrimmar = false;
+    this.Stormwind = false;
+    this.ThunderBluff = true;
+    console.log("clicked 3");
+  }
+
+  ngOnInit() {
+    this.LocationOne(),
+      this.LocationTwo(),
+      this.LocationThree()
+  }
 
 
 }

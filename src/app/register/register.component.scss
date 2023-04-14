@@ -3,11 +3,10 @@
     height: 79vh;
     margin: auto;
     margin-top: 150px;
-    // background-color: red;
     position: relative;
 }
 
-.loginText{
+.loginText {
     text-align: center;
     color: white;
     padding-top: 25px;
@@ -42,33 +41,26 @@
     margin-top: 35px;
     border-radius: 5px;
     background-color: rgba(61, 61, 59, 0.664);
-
     border: none;
-
-
-
 }
-.VerifyButton:hover {
-    
 
+.VerifyButton:hover {
     background-color: #17c52e;
-    transition: ease-in-out 0.3s ;
-   color: white;
+    transition: ease-in-out 0.3s;
+    color: white;
 }
 
 .ToLogin {
     color: #17c52e;
     padding-top: 20px;
-} 
+}
 
 
 .ToLogin:hover {
     text-decoration: underline;
-   
-} 
+}
 
 .usernameModal {
-    
     position: absolute;
     left: 325px;
     top: 460px;

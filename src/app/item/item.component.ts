@@ -11,12 +11,12 @@ import { ItemdbService } from '../services/itemdb.service';
 })
 export class ItemComponent {
 
-  constructor (private itemService: ItemdbService) {}
+  constructor(private itemService: ItemdbService) { }
 
   items: Item[] = []
-  
+
   loading = false
-  
+
   newAmountHolder: number = 0
 
   updated = false
@@ -30,7 +30,7 @@ export class ItemComponent {
   }
 
 
-  //UPDATE
+  
   detectChange(e: any) {
     this.newAmountHolder = +e.target.value
   }
@@ -39,18 +39,17 @@ export class ItemComponent {
     this.itemService.updateAmount(id, this.newAmountHolder).subscribe((item) => {
       console.log(item.amount)
       this.updated = true
-      
+
 
     })
   }
 
   ngOnInit() {
-  this.getItems()    
+    this.getItems()
   }
 
 
-  //define var that we get from parent (map Component)
-  @Input() itemObject = {value: ""}
+
 
 }
 

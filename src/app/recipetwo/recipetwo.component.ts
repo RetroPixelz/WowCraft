@@ -21,9 +21,7 @@ export class RecipetwoComponent {
 
 
   getRecipes() {
-    // add loading animation here 
     this.isLoading = true
-    //
     this.craft.getAllRecipes().subscribe((data) => {
     this.listOfRecipes = data
     this.isCrafting = false

@@ -1,5 +1,3 @@
-
-
 .Item {
     width: 200px;
     height: 350px;
@@ -18,7 +16,7 @@
 .ItemImage {
     width: 150px;
     height: 150px;
-    // background-image: url(../../assets/potion.webp);
+
     background-size: cover;
     margin: auto;
     margin-top: 20px;
@@ -27,7 +25,7 @@
 p {
     text-align: center;
     color: white;
-    // margin-top: 10px;
+
 }
 
 h3 {
@@ -41,16 +39,13 @@ h3 {
 
     display: flex;
     flex-direction: row;
-    // background-color: red;
+
     flex-basis: 20%;
     justify-content: center;
     align-items: center;
-    // gap: px;
+
     margin-top: 20px;
 
-    // width: 80%;
-    // height: 40px;
-    // display: flex;
 }
 
 
@@ -76,14 +71,6 @@ h3 {
     width: 60px;
 }
 
-// .Amount {
-//     display: 1;
-//     width: 40px;
-//     margin-left: 10px;
-//     margin-right: 10px;
-//     text-align: center;
-//     color: white;
-// }
 
 .More {
     display: 1;
@@ -115,7 +102,7 @@ h3 {
 
 .updateButton:hover {
     background-color: #74c75c;
-    // color: black;
+
 }
 
 
@@ -129,6 +116,3 @@ h3 {
     border: 2px solid black;
     padding-top: 15px;
 }
-
-
-

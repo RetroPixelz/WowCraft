@@ -1,54 +1,49 @@
-.body { 
+.body {
     padding: 0;
     margin: 0;
-    }
-    
-    .toolbar {
-        z-index: 100;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        color: white;
-        font-weight: 600;
-    
-        // background-color: rgba(0, 0, 0, 0.363);
-        background-image: linear-gradient(to top , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.61));
-      }
-     
-    
-      a {
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        margin-right: 30px;
-        
-      }
-    
-      a:hover {
-        color: white;
-        text-decoration: underline ;
-      }
+}
 
-      .spacer {
-        flex: 1;
-      }
-    
-      .toolbar {
-        
-       position: fixed;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        /* background-color: #1b1b1bb9; */
-        color: white;
-        font-weight: 600;
-      }
-    
-      .toolbar img {
-        margin: 0 16px;
-    
-      }
+.toolbar {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.61));
+}
+
+
+a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar {
+    position: fixed;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+.toolbar img {
+    margin: 0 16px;
+
+}
