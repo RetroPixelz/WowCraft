@@ -17,7 +17,7 @@
 <p align="center">
 
   <a href="https://github.com/Justin-OwiStudent/WowCraft/blob/main/src/assets/LOGO.png">
-    <img src="src/assets/icon.svg" alt="Logo" width="100px">
+    <img src="src/assets/LOGO.png" alt="Logo" width="100px">
   </a>
   
   <h3 align="center">Wow Craft</h3>
@@ -198,11 +198,11 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- TODO Change this -->
 
-![image2](src/assets/Mock1.jpg)
-![image3](src/assets/Mock2.jpg)
-![image4](src/assets/Mock3.jpg)
-![image5](src/assets/Mock4.jpg)
-![image11](src/assets/Mock4.jpg)
+![image2](src/assets/Mock1.png)
+![image3](src/assets/Mock2.png)
+![image4](src/assets/Mock3.png)
+![image5](src/assets/Mock4.png)
+![image11](src/assets/Mock4.png)
 
 <br>
 
