@@ -29,26 +29,28 @@ export class LoginComponent {
   
 
   CheckVerification() {
-    this.verify.CheckVerification(this.username.value!, this.password.value!).subscribe((Response) => {
-      if(Response.success) {
-        //store jwt in storage
-   
-        console.log("Verified Successfully")
-        this.isVerified = true;
-        
-        this.router.navigateByUrl('/Landing')
-      } else {
-        if(this.username.value === "") {
+    try {
+      this.verify.CheckVerification(this.username.value!, this.password.value!).subscribe((Response) => {
+        if(Response.success) {
+          console.log("Verified Successfully")
+          this.isVerified = true;
+          
+          this.router.navigateByUrl('/Landing')
+        } else {
+          console.log("Verified Unsuccessfull")
+          this.isVerified = false;
           this.notVerified = true
+          
+          
+  //Make an alert or ngif show something to say it failed
         }
-        console.log("Verified Unsuccessfull")
-        this.isVerified = false;
-        this.router.navigateByUrl("/Login");
-        
-        
-//Make an alert or ngif show something to say it failed
-      }
-    })
+      })    
+    } catch (error) {
+      this.notVerified = true
+
+      console.log("there was a problem, please try again later")
+    }
+  
   }
 
   

@@ -17,13 +17,21 @@
 
             <!-- <h1> Hi {{username.value | uppercase }}, Have a look at all the available recipes here!</h1> -->
 
-            <img *ngIf="isLoading" src="assets/Loading.gif" class="loading">
-            <div *ngIf="isCrafting"  class="busyCrafting"><p >Busy Crafting...</p></div>
+            <!-- <img *ngIf="isLoading" src="assets/Loading.gif" class="loading"> -->
+            <!-- <div *ngIf="isCrafting"  class="busyCrafting"><p >Busy Crafting...</p></div> -->
                    
-                <div>
-
+                <div *ngIf="Ogrimmar">
+                    <app-recipe></app-recipe>
                 </div>
-                <app-recipe></app-recipe>
+
+                <div *ngIf="Stormwind"  >
+                    <app-recipetwo></app-recipetwo>
+                </div>
+
+                <div *ngIf="ThunderBluff">
+                    <app-recipethree></app-recipethree>
+                </div>
+                
 
                 <!-- <div class="CraftingItem" *ngFor="let recipe of listOfRecipes">
                     <div class="CraftingItemDetails">

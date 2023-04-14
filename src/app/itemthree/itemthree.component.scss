@@ -68,12 +68,13 @@ h3 {
 }
 
 .Amount {
-    display: 1;
-    width: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 59, 0.664);
     text-align: center;
-    color: white;
+    height: 25px;
+    width: 60px;
 }
 
 .More {
@@ -110,80 +111,14 @@ h3 {
 }
 
 
+.updatedText {
+    width: 250px;
+    height: 30px;
+    background-color: #17c52eb6;
+    border-radius: 15px;
+    margin: auto;
+    border: 2px solid black;
+    padding-top: 15px;
+}
 
 
-
-
-
-// .item{
-//     display: flex;
-//     flex-direction: column;
-//     width: 340px;
-//     border-radius: 8px;
-//     aspect-ratio: 1/1;
-//     background-color: rgb(15, 15, 15);
-//     overflow: hidden;
-//     padding: 10px;
-//     gap: 10px;
-   
-
-//     &_image{
-//         display: flex;
-//         width: 100%;
-//         // background-color: blue;
-//         height: 60%;
-//         overflow: hidden;
-//         align-items: center;
-//         justify-content: center;
-
-//         &_img{
-//             width: 80%;
-//             object-fit: cover;
-//             aspect-ratio: 16/9;
-//         }
-//     }
-
-//     &_heading{
-//         font-size: 18px;
-//         color: white;
-//     }
-//     &_description{
-//         color: white;
-//         font-size: 14px;
-//     }
-
-//     &_buttonsContainer{
-//         display: flex;
-//         flex-direction: row;
-//         background-color: red;
-//         flex-basis: 20%;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 10px;
-
-//         &_button{
-//             font-size: 55px;
-//             // background-color: red;
-//             height: fit-content;
-//             justify-content: center;
-//             align-items: center;
-//             color: white;
-//         }
-
-//         &_amount{
-//             font-size: 20px;
-//             color: white;
-//             // background-color: red;
-//         }
-//     }
-
-//     &_updateButton {
-//         display: flex;
-//         flex-direction: row;
-//         background-color: rgb(238, 255, 0);
-//         flex-basis: 20%;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 10px;
-//     }
-// }

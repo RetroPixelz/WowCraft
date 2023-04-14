@@ -14,6 +14,11 @@ export class ItemthreeService {
 
   items: Item[] = []
 
+  updateAmount(id: string, newAmount: number): Observable<Item> {
+    return this.http.put<Item>(`${this.url}/${id}`, {amount: newAmount})
+  }
+  
+
   getAllItemsThree(): Observable<Item[]> {
     return this.http.get<Item[]>(this.url)
   }

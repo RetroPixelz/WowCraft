@@ -1,4 +1,4 @@
-
+    <p class="updatedText" *ngIf="updated">Item Amount Updated</p>
     <div *ngFor="let item of items" class="Item">
         
    
@@ -6,13 +6,17 @@
         
 
         <h3>{{item.title}}</h3>
-       
+        
         <div class="Quantity">
-            <div class="Less">-</div>
-            <div class="Amount">{{item.amount}}</div>
-            <div class="More">+</div>
+            <!-- <div class="Less">-</div> -->
+            
+            <input class="Amount" (change)="detectChange($event)" [value]="item.amount"  />
+            
+            <!-- <div class="Amount">{{item.amount}}</div>
+            <div class="More">+</div> -->
         </div>
-        <div class="updateButton">
+        
+        <div class="updateButton" (click)="updateAmount(item._id!)">
             <p>Update !</p>
         </div>
     </div>

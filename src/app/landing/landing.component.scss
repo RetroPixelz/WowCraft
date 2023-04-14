@@ -1,16 +1,4 @@
 
-// .BackGround { 
-//     z-index: 0;
-//     // filter: grayscale(100%);
-    
-//     background-image: linear-gradient(45deg,
-//     rgba(0, 0, 0, 0.726),
-//     rgba(0, 0, 0, 0.596)),
-//      url(../../assets/Background.jpg);
-//     height: 100vh;
-//     padding-top: 60px;
-// }
-
 .bigBlock {
     position: relative;
 }
@@ -19,7 +7,7 @@
     z-index: 1;
     margin: auto;
     width: 100%;
-    height: 88.6vh;
+    height: 88.4vh;
     margin-top: 50px;
     // height: 10px;
     // background-color: rgb(243, 109, 109);
@@ -39,7 +27,7 @@
     height: 650px;
     position: absolute;
     right: 0;
-    top: 300px;
+    top: 250px;
     // margin-left: 50px;
 }
 

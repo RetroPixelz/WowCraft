@@ -19,6 +19,9 @@ export class ItemdbService {
     return this.http.get<Item[]>(this.url)
   }
 
+  updateAmount(id: string, newAmount: number): Observable<Item> {
+    return this.http.put<Item>(`${this.url}/${id}`, {amount: newAmount})
+  }
   
 
 }

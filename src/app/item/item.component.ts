@@ -17,7 +17,9 @@ export class ItemComponent {
   
   loading = false
   
+  newAmountHolder: number = 0
 
+  updated = false
 
   getItems() {
     this.loading = true
@@ -27,6 +29,20 @@ export class ItemComponent {
     })
   }
 
+
+  //UPDATE
+  detectChange(e: any) {
+    this.newAmountHolder = +e.target.value
+  }
+
+  updateAmount(id: string) {
+    this.itemService.updateAmount(id, this.newAmountHolder).subscribe((item) => {
+      console.log(item.amount)
+      this.updated = true
+      
+
+    })
+  }
 
   ngOnInit() {
   this.getItems()    

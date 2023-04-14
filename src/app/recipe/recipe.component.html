@@ -1,3 +1,9 @@
+
+
+<img *ngIf="isLoading" src="assets/Loading.gif" class="loading">
+<div *ngIf="isCrafting"  class="busyCrafting"><p >Busy Crafting...</p></div>
+
+
 <div class="CraftingItem" *ngFor="let recipe of listOfRecipes">
     <div class="CraftingItemDetails">
         <img class="CraftingImage" [ngSrc]="recipe.image" width="50" height="50" priority/>
@@ -16,13 +22,13 @@
     
                 </li>
    
-    <p>Current Amount Crafted: {{recipe.amount}}</p>
+            <p>Current Amount Crafted: {{recipe.amount}}</p>
             </ul>
         </div>
         
     </div>
     
     <button (click)="craftRecipe(recipe._id!)" [disabled]="isCrafting" *ngIf="recipe.craftable" class="CraftingButton">Craft!</button>
-    <button *ngIf="!recipe.craftable" class="CraftingButton">Missing Ingreients!</button>
+    <button *ngIf="!recipe.craftable" class="CraftingButtonBad">Missing Ingreients!</button>
 
 </div>

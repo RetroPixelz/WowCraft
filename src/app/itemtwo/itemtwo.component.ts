@@ -16,6 +16,23 @@ export class ItemtwoComponent {
 
   itemstwo: Item[] = []
 
+  newAmountHolder: number = 0
+
+  updated = false
+
+  detectChange(e: any) {
+    this.newAmountHolder = +e.target.value
+  }
+
+  updateAmount(id: string) {
+    this.ItemServiceTwo.updateAmount(id, this.newAmountHolder).subscribe((item) => {
+      console.log(item.amount)
+      this.updated = true
+      
+
+    })
+  }
+
   ngOnInit() {
     this.ItemServiceTwo.getAllItemsTwo().subscribe((data) => {
       this.itemstwo = data;

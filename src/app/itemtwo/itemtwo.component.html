@@ -1,3 +1,4 @@
+<p class="updatedText" *ngIf="updated">Item Amount Updated</p>
 <div *ngFor="let item of itemstwo" class="Item">
     <!-- <div class="ItemImage">{{item.image}}</div> -->
     <img class="ItemImage" [src]="item.image" >
@@ -7,11 +8,10 @@
     <h3>{{item.title}}</h3>
     <!-- <p>{{item.description}}</p> -->
     <div class="Quantity">
-        <div class="Less">-</div>
-        <div class="Amount">{{item.amount}}</div>
-        <div class="More">+</div>
+        <input class="Amount" (change)="detectChange($event)" [value]="item.amount"  />
+
     </div>
-    <div class="updateButton">
+    <div class="updateButton" (click)="updateAmount(item._id!)">
         <p>Update !</p>
     </div>
 </div>
