@@ -254,6 +254,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [Figma](https://www.figma.com/)
+- [Wowiki](https://wowwiki-archive.fandom.com/wiki/WoWWiki:WoW_Icons/Icon_List/Images#Potions)
+- [pngegg](https://www.pngegg.com/)
 
 Footer
 © 2023 GitHub, Inc.
