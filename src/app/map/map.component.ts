@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { Item } from '../models/item';
 import { ItemdbService } from '../services/itemdb.service';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
+  
 })
 
 export class MapComponent {
@@ -17,11 +19,28 @@ export class MapComponent {
 
   loading = false
 
+  show = false
+  show2 = false
+
+
 
 
   constructor() { }
 
+  ShowOne() {
+    this.show = true
+    this.show2 = false
 
+  }
+
+  ShowTwo() {
+    this.show = false
+    this.show2 = true
+  }
+
+  off() {
+    this.show = false
+  }
 
   LocationOne() {
     this.Ogrimmar = true;

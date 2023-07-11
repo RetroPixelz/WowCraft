@@ -26,61 +26,118 @@ export class CraftingComponent {
 
   isLoading = false;
 
-  Verified = sessionStorage.getItem("isVerified")
-
-  getRecipes() {
+  // Verified = JSON.parse(sessionStorage.getItem('Verified'))
   
-    this.isLoading = true
+  details = ''
 
-    this.craft.getAllRecipes().subscribe((data) => {
-    this.listOfRecipes = data
-    this.isCrafting = false
-    this.isLoading = false
+  username = new FormControl("");
+  password = new FormControl("");
+
+
+  // if(this.Verified) {
+
+  // }
+  // AlreadyVerified() {
+  //   try {
+  //     this.Verified === true
+      
+  //   } catch (error) {
+      
+  //   }
     
-    })
-  } 
+  // }
+
+
+
+  // CheckVerification() {
+  //   this.verify.CheckVerifications(this.username.value!, this.password.value!).subscribe((Response) => {
+  //     if(Response.success) {
+  //       console.log("Verfifeid successfully")
+  //       this.isVerified = true
+  //     } else {
+  //       this.isVerified = false
+  //     }
+  //   })
+  // }
+
+
+  CheckValidLogin() {
+    if(!sessionStorage.getItem('Verified')) {
+      this.isVerified = false;
+    } else {
+      this.isVerified = true;
+
+    }
+  
+  }
+
+  // getRecipes() {
+  
+  //   this.isLoading = true
+
+  //   this.craft.getAllRecipes().subscribe((data) => {
+  //   this.listOfRecipes = data
+  //   this.isCrafting = false
+  //   this.isLoading = false
+    
+  //   })
+  // } 
 
  
 
-  craftRecipe(recipeId: string) {
-    this.isCrafting = true
-    this.craft.craftRecipe(recipeId).subscribe((Response) => {
-      this.isCrafting = false
-      if(Response.success) {
-        this.getRecipes();
-      }
-    })
-  }
+  // craftRecipe(recipeId: string) {
+  //   this.isCrafting = true
+  //   this.craft.craftRecipe(recipeId).subscribe((Response) => {
+  //     this.isCrafting = false
+  //     if(Response.success) {
+  //       this.getRecipes();
+  //     }
+  //   })
+  // }
   
 
   
 LocationOne() {
+  
+  this.isLoading = true
   this.Ogrimmar = true;
   this.Stormwind = false;
   this.ThunderBluff = false;
-  
+  this.isLoading = false
+
+   
 }
 
 LocationTwo() {
+  this.isLoading = true
+
   this.Ogrimmar = false;
   this.Stormwind = true;
   this.ThunderBluff = false;
+  this.isLoading = false
 
 }
 
 LocationThree() {
+  this.isLoading = true
+
   this.Ogrimmar = false;
   this.Stormwind = false;
   this.ThunderBluff = true;
+  this.isLoading = false
  
 }
 
 ngOnInit() {
-  this.getRecipes()
+  // this.getRecipes()
   this.LocationOne(),
   this.LocationTwo(),
-  this.LocationThree()
-  console.log(this.Verified)
+  this.LocationThree(),
+  this.CheckValidLogin()
+  // console.log(this.Verified)
+  // console.log()
+  // console.log(this.Verified)
+  
 }
 
 }

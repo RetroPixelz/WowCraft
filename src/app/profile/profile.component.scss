@@ -1,0 +1,35 @@
+
+.InventoryInfo {
+    width: 50%;
+    height: 100vh;
+    // background-color: red;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.InfoImage {
+    width: 160px;
+    height: 200px;
+    // background-color: blue;
+    background-image: url(../../assets/Three.png);
+    background-size: contain;
+    margin: auto;
+}
+
+.InfoTitle {
+    font-family: 'Alkatra', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+.InfoDescription {
+    font-family: 'Alkatra', cursive;
+    font-size: 20px;
+    color: white;
+
+}
+
+.hehe {
+    height: 500px;
+}

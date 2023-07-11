@@ -1,12 +1,45 @@
+.InventoryInfo {
+    width: 50%;
+    height: 325px;
+    // background-color: red;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.InfoImage {
+    width: 160px;
+    height: 200px;
+    // background-color: blue;
+    background-image: url(../../assets/One.png);
+    background-size: contain;
+    margin: auto;
+}
+
+.InfoTitle {
+    font-family: 'Alkatra', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+.InfoDescription {
+    font-family: 'Alkatra', cursive;
+    font-size: 20px;
+    color: white;
+
+}
+
 .MapSectioning {
     display: flex;
 }
 
 .MapHere {
-    margin-left: 100px;
-    margin-top: 100px;
-    width: 55%;
-    height: 700px;
+    // margin-left: 100px;
+    // margin-top: 100px;
+    margin: auto;
+    width: 35%;
+    height: 400px;
     background-image: url(../../assets/Map.jpg);
     background-size: 100% 100%;
     position: relative;
@@ -26,53 +59,82 @@
 
 .Horde {
     background-image: url(../../assets/Horde.png);
-    width: 40px;
-    height: 60px;
+    width: 30px;
+    height: 40px;
     background-size: cover;
     position: absolute;
-    left: 310px;
-    bottom: 250px;
+    left: 200px;
+    bottom: 150px;
 }
 
 .Horde:hover {
     width: 60px;
     height: 80px;
-    left: 300px;
+    left: 190px;
     transition: ease-in-out 0.2s;
+    
+}
 
+.hover {
+    width: 300px;
+    height: 300px;
+    // background-color: red;
+    position: absolute;
+    left: -450px;
+    flex-direction: column;
+    text-align: center;
+    // border: 1px solid white;
+    border-radius: 10px;
+    
+}
+
+.HordeImage {
+    background-image: url(../../assets/Horde.png);
+    width: 100px;
+    height: 120px;
+    background-size: cover;
+    margin: auto;
+}
+
+.hoverTwo {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    position: absolute;
+    left: -450px;
 }
 
 .Alliance {
     background-image: url(../../assets/Alliance.png);
-    width: 80px;
-    height: 50px;
+    width: 45px;
+    height: 40px;
     background-size: cover;
     position: absolute;
-    right: 300px;
-    bottom: 200px;
+    right: 200px;
+    bottom: 100px;
 }
 
 .Alliance:hover {
     width: 100px;
     height: 70px;
-    right: 290px;
+    right: 160px;
     transition: ease-in-out 0.2s;
 }
 
 .ThunderBluff {
     background-image: url(../../assets/ThunderBluff.png);
-    width: 80px;
-    height: 60px;
+    width: 45px;
+    height: 40px;
     background-size: cover;
     position: absolute;
-    left: 200px;
-    bottom: 200px;
+    left: 125px;
+    bottom: 100px;
 }
 
 .ThunderBluff:hover {
     width: 100px;
     height: 80px;
-    left: 185px;
+    left: 95px;
     transition: ease-in-out 0.2s;
 }
 
@@ -104,6 +166,14 @@
     background-color: rgba(83, 83, 83, 0.603);
     transition: ease-in-out 0.2s;
 }
+
+// .LocationOneImage {
+//     background-image: url(../../assets/Horde.png);
+//     background-size: cover;
+//     height: 40px;
+//     width: 40px;
+//     z-index: 999;
+// }
 
 .LocationTwo {
     flex: 1;
@@ -141,6 +211,8 @@ h4 {
     font-size: 18px;
     color: white;
     text-align: center;
+    font-family: 'Alkatra', cursive;
+
 }
 
 .ItemSection {
@@ -152,5 +224,19 @@ h4 {
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
+
+}
+
+
+h1 {
+    color: white;
+    font-family: 'Alkatra', cursive;
+
+}
+
+
+p {
+    color: white;
+    font-family: 'Alkatra', cursive;
 
 }

@@ -30,19 +30,22 @@ export class LoginComponent {
 
   CheckVerification() {
     try {
-      this.verify.CheckVerification(this.username.value!, this.password.value!).subscribe((Response) => {
+      this.verify.CheckVerifications(this.username.value!, this.password.value!).subscribe((Response) => {
         if (Response.success) {
+          console.log(this.username)
           console.log("Verified Successfully")
           this.isVerified = true;
+
+          sessionStorage.setItem(
+            "Verified",
+            JSON.stringify(this.isVerified = true)
+          );
 
           this.router.navigateByUrl('/Landing')
         } else {
           console.log("Verified Unsuccessfull")
           this.isVerified = false;
-          this.notVerified = true
-
-
-
+          this.notVerified = true;
         }
       })
     } catch (error) {

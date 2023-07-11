@@ -71,3 +71,35 @@
     padding-top: 15px;
 }
 
+.ExploreSection {
+    width: 300px;
+   
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    // background-color: red;
+}
+
+.explore {
+    // margin: auto;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 1px solid white;
+    font-family: 'Alkatra', cursive;
+    // padding-top: 5px;
+    color: white;
+}
+
+.explore:hover {
+    
+}
+
+
+h2 {
+    color: white;
+    text-align: center;
+
+}

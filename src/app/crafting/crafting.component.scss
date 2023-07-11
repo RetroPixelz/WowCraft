@@ -1,4 +1,34 @@
+.InventoryInfo {
+    width: 50%;
+    height: 325px;
+    // background-color: red;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
 
+.InfoImage {
+    width: 160px;
+    height: 200px;
+    // background-color: blue;
+    background-image: url(../../assets/Two.png);
+    background-size: contain;
+    margin: auto;
+}
+
+.InfoTitle {
+    font-family: 'Alkatra', cursive;
+    font-size: 50px;
+    color: white;
+
+}
+
+.InfoDescription {
+    font-family: 'Alkatra', cursive;
+    font-size: 20px;
+    color: white;
+
+}
 
 
 .LocationNav {
@@ -10,6 +40,7 @@
 }
 
 .LocationOne {
+    
     flex: 1;
     width: 200px;
     height: 40px;
@@ -61,6 +92,8 @@ h4 {
     font-size: 18px;
     color: white;
     text-align: center;
+    font-family: 'Alkatra', cursive;
+
 }
 
 
@@ -144,7 +177,7 @@ h4 {
 }
 
 .Decor5 {
-    background-image: url(../../assets/Decor5.png);
+    // background-image: url(../../assets/Decor5.png);
     background-size: cover;
     width: 400px;
     height: 400px;
@@ -163,7 +196,65 @@ p {
     padding-top: 10px;
 }
 
+.loading {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
 
 
+.loginFirst {
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    // background-color: red;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+
+}
+
+.warning {
+    background-image: url(../../assets/Warning.png);
+    background-size: contain;
+    margin: auto;
+    width: 220px;
+    height: 250px;
+}
 
 
+.verify {
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 1px solid white;
+    font-family: 'Alkatra', cursive;
+
+}
+
+.verify:hover {
+    background-color: rgba(22, 167, 22, 0.603);
+
+}
+
+h1 {
+    font-family: 'Alkatra', cursive;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Alkatra', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+
+// .BackGround {
+//     height: 100vh;
+// }

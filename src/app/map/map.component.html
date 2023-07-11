@@ -2,35 +2,64 @@
     <app-navigation></app-navigation>
 
 
+    <div class="InventoryInfo">
+        <div class="InfoImage">
+
+        </div>
+        <h1 class="InfoTitle">Inventory</h1>
+        <h2 class="InfoDescription">Welcome to your inventory,
+            <br/>
+            here you can look at and manage all your items.
+            <br/>
+            Feel free to update the amount of stock you have
+        </h2>
+        <!-- <h2 class="InfoDescription">Welcome to your inventory, here you can look at and manage all your items</h2> -->
+    
+    </div>
+
     <div class="MapSectioning">
-        <div class="MapHere">
+        
+        <div class="MapHere" >
             <a>
-                <div class="Horde"></div>
+                <div class="Horde" (click)="ShowOne()"></div>
+                
+                <div *ngIf="show" class="hover">
+                    <div class="HordeImage"></div>
+                    <h1>Ogrimmar </h1>
+                    <p>The capital of the horde faction of the world of warcraft</p>
+                </div>
             </a>
             <a>
-                <div class="Alliance"></div>
+                <div class="Alliance" (click)="ShowTwo()"></div>
+                <div *ngIf="show2" class="hoverTwo">
+
+                </div>
             </a>
             <a>
                 <div class="ThunderBluff"></div>
             </a>
         </div>
         
-        <div class="IllustrationTwo">
+        <!-- <div class="IllustrationTwo">
 
 
-        </div>
+        </div> -->
 
     </div>
 
     <div class="StockSection">
 
         <div class="LocationNav">
+
             <div (click)="LocationOne()" class="LocationOne">
+                <div class="LocationOneImage"></div>
                 <h4>Ogrimmar</h4>
             </div>
+
             <div (click)="LocationTwo()" class="LocationTwo">
                 <h4>StormWind</h4>
             </div>
+
             <div (click)="LocationThree()" class="LocationThree">
                 <h4>Thunder Bluff</h4>
             </div>
@@ -39,17 +68,15 @@
 
 
         <div *ngIf="Ogrimmar" class="ItemSection">
-
             <app-item></app-item>
-
         </div>
+
         <div *ngIf="Stormwind" class="ItemSection">
             <app-itemtwo></app-itemtwo>
-
         </div>
+
         <div *ngIf="ThunderBluff" class="ItemSection">
             <app-itemthree></app-itemthree>
-
         </div>
 
     </div>

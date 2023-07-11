@@ -14,10 +14,10 @@ export class LandingComponent {
   //PARSE 
   // Verified = JSON.parse(sessionStorage.getItem("details"))
   Verified = sessionStorage.getItem('details')
-  VerifiedObject = JSON.parse("this.Verified")
+  // VerifiedObject = JSON.parse("this.Verified")
 
 ngOnInit() {
-  console.log(this.VerifiedObject)
+  // console.log(this.VerifiedObject)
 }
 
 }

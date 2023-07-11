@@ -2,7 +2,40 @@
     <app-navigation></app-navigation>
 
 
-    <div class="LocationNav">
+    <div appAuthOnly [isVerified]="isVerified" class="InventoryInfo">
+        <div class="InfoImage">
+
+        </div>
+        <h1 class="InfoTitle">Crafting</h1>
+        <h2 class="InfoDescription">Here we have our crafting,
+            <br/>
+             based on the stock you have available at your designated locations,
+            <br/>
+             you are able to craft some cool recipes that we have available !
+
+        </h2>
+    </div>
+    
+
+    <div appAuthOnly [isVerified]="!isVerified" class="loginFirst">
+        <div class="warning"></div>
+        <h1 >So you want to get Crafting ? </h1>
+        <h2 >before you become a Master Crafter, We need to verify who you are</h2>
+        <h2 > Click here to verify yourself !</h2>
+        <a routerLink="/Login">
+            <button class="verify"> Login </button>
+        </a>
+
+<!-- <input [formControl]="username" >
+<input [formControl]="password" > -->
+
+<!-- <button (click)="CheckVerification()"></button> -->
+
+
+    </div>
+
+
+    <div appAuthOnly [isVerified]="isVerified" class="LocationNav">
         <div (click)="LocationOne()" class="LocationOne">
             <h4>Ogrimmar</h4>
         </div>
@@ -14,12 +47,13 @@
         </div>
 
     </div>
-    <div class="CraftingPageSection">
+    <div appAuthOnly [isVerified]="isVerified" class="CraftingPageSection">
+        
 
 
 
         <div class="Recipes">
-
+            <img *ngIf="isLoading" src="assets/Loading.gif" class="loading">
 
 
             <div *ngIf="Ogrimmar">

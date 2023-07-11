@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
+  isVerified = false
+
+  clear() {
+    sessionStorage.clear()
+  }
+
+  checkValidLogin() {
+    if(!sessionStorage.getItem('Verified')) {
+      this.isVerified = false;
+    } else {
+      this.isVerified = true;
+
+    }
+  
+  }
+
+  ngOnInit() {
+
+  this.checkValidLogin();
+
+  }
+
 }

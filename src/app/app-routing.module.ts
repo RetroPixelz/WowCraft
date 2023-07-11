@@ -6,13 +6,16 @@ import { LandingComponent } from './landing/landing.component';
 import { MapComponent } from './map/map.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-  {path: "Login", component: LoginComponent},
-  {path: "Register", component: RegisterComponent},
   {path: "Landing", component: LandingComponent},
+  {path: "Register", component: RegisterComponent},
+  {path: "Login", component: LoginComponent},
   {path: "Map", component: MapComponent},
   {path: "Crafting", component: CraftingComponent},
+  {path: "Profile", component: ProfileComponent},
+
 
 
 ];

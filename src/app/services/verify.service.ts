@@ -14,8 +14,8 @@ export class VerifyService {
   url: string = "http://localhost:3000/user/login"
 
   //method to check user verified
-  CheckVerification(username: string, password:string):Observable<any> {
-    return this.http.post<any>(this.url, {username, password})
+  CheckVerifications(username: string, password:string):Observable<any> {
+    return this.http.post<any>(this.url, {username, password, })
     .pipe(
       retry(2),
       catchError(this.errorHandle.handleError)

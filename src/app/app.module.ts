@@ -22,7 +22,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { RecipetwoComponent } from './recipetwo/recipetwo.component';
 import { RecipethreeComponent } from './recipethree/recipethree.component';
-import { ModalComponent } from './modal/modal.component'
+import { ModalComponent } from './modal/modal.component';
+import { ProfileComponent } from './profile/profile.component'
 
 
 
@@ -45,7 +46,8 @@ import { ModalComponent } from './modal/modal.component'
     RecipeComponent,
     RecipetwoComponent,
     RecipethreeComponent,
-    ModalComponent
+    ModalComponent,
+    ProfileComponent
 
     
   ],

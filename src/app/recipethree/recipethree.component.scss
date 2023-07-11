@@ -19,7 +19,8 @@
     width: 400px;
     height: 220px;
     background-color: rgba(0, 0, 0, 0.568);
-    border-radius: 5px;
+    border-radius: 15px;
+
     float: left;
     margin-top: 20px;
 }
@@ -41,6 +42,8 @@
 .RecipeName {
     margin-left: 15px;
     max-width: 260px;
+    font-family: 'Alkatra', cursive;
+
 }
 
 .ingredientsneeded {
@@ -49,27 +52,34 @@
 }
 
 .CraftingButton {
-    width: 100%;
-    height: 65px;
+    width: 95%;
+    height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 5px;
-    border: 0.1px solid white;
+    border-radius: 20px;
+
+    border: 0.1px solid #FEE62B;
     padding-top: 5px;
     color: white;
+    font-family: 'Alkatra', cursive;
+
 }
 
 .CraftingButton:hover {
-    background: #74c75c;
+    background: #FEE62B;
+    color: black;
 }
 
 .CraftingButtonBad {
-    width: 100%;
-    height: 65px;
+    width: 95%;
+    height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 5px;
-    border: 0.1px solid white;
+    border-radius: 20px;
+
+    border: 0.1px solid red;
     padding-top: 5px;
     color: white;
+    font-family: 'Alkatra', cursive;
+
 }
 
 .CraftingButtonBad:hover {

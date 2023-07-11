@@ -1,48 +1,255 @@
-
-.bigBlock {
-    position: relative;
-}
-
-.MainBlock{
-    z-index: 1;
-    margin: auto;
+.background-Image {
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0) 90%, rgb(36, 37, 41) 100%),
+        url(../../assets/Background.jpg);
+    background-repeat: no-repeat;
+    margin-top: -60px;
     width: 100%;
-    height: 88.4vh;
-    margin-top: 50px;
-    display: flex;
-}
-
-.HeroText{
-    width: 35%;
-}
-
-.RightImages {
-    width: 49%;
-    background-image: url(../../assets/Decor1.png);
+    height: 950px;
     background-size: cover;
-    width: 500px;
-    height: 650px;
-    position: absolute;
-    right: 0;
-    top: 250px;
+    text-align: center;
+}
+
+.Intro {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    padding-top: 180px;
+}
+.hero {
+    font-size: 100px;
 }
 
 h2 {
-    margin-top: 80px;
-    font-size: 60px;
-    text-align: center;
+    font-family: 'Alkatra', cursive;
+    font-size: 20px;
     color: white;
 }
 
 h1 {
+    font-family: 'Alkatra', cursive;
     font-size: 50px;
-    text-align: center;
+    margin-left: 20px;
+    margin-top: 45px;
     color: white;
 }
 
 p {
-    margin-top: 40px;
+    color: white;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.Background-Rest {
+    width: 100%;
+    // background-color: rgb(36, 37, 41);
+    padding-bottom: 100px;
+}
+
+
+.spacer {
+    height: 50px;
     text-align: center;
+   
+}
+
+.readMore {
+    // background-color: red;
+    height: 50px;
+    margin-top: 100px;
     color: white;
 }
 
+
+.ThreeSections {
+    margin: auto;
+    width: 85%;
+    height: 400px;
+    // background-color: red;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.category {
+    width: 33%;
+    height: 100%;
+    // background-color: blue;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+.ImageHere {
+    width: 200px;
+    height: 240px;
+    // background-color: red;
+    background-image: url(../../assets/One.png);
+    background-size: cover;
+}
+
+.ImageHereTwo {
+    width: 200px;
+    height: 240px;
+    // background-color: red;
+    background-image: url(../../assets/Two.png);
+    background-size: cover;
+}
+
+.ImageHereThree {
+    width: 200px;
+    height: 240px;
+    // background-color: red;
+    background-image: url(../../assets/Three.png);
+    background-size: cover;
+}
+
+.textHere {
+    // background-color: yellow;
+    width: 350px;
+    height: 250px;
+}
+
+
+
+//ONE
+// .sectionOne {
+//     width: 95%;
+//     height: 350px;
+//     margin: auto;
+//     margin-top: 100px;
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .OneOne {
+//     margin-left: 50px;
+//     height: 400px;
+//     width: 60%;
+// }
+
+
+
+// .displayOne {
+//     width: 80%;
+//     height: 350px;
+//     margin: auto;
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .displayImage {
+//     width: 330px;
+//     height: 350px;
+//     background-image: url(../../assets/One.png);
+//     background-size: 100% 100%;
+// }
+
+
+
+// //TWO
+// .sectionTwo {
+//     width: 95%;
+//     height: 350px;
+//     margin: auto;
+//     margin-top: 30px;
+//     flex-direction: row;
+// }
+
+// .OneRight {
+//     margin-top: -20px;
+//     float: right;
+//     height: 100%;
+//     width: 50%;
+// }
+
+// .displayImageTwo {
+//     width: 330px;
+//     height: 350px;
+//     background-image: url(../../assets/Two.png);
+//     background-size: 100% 100%;
+// }
+
+
+// //THREE
+// .sectionThree {
+//     width: 95%;
+//     height: 350px;
+//     margin: auto;
+//     margin-top: 30px;
+// }
+
+// .displayImageThree {
+//     width: 330px;
+//     height: 400px;
+//     background-image: url(../../assets/Three.png);
+//     background-size: 100% 100%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .MainBlock{
+//     z-index: 1;
+//     margin: auto;
+//     width: 100%;
+//     height: 88.4vh;
+//     margin-top: 50px;
+//     display: flex;
+// }
+
+// .HeroText{
+//     width: 35%;
+//     font-family: 'Alkatra', cursive;
+// }
+
+// .RightImages {
+//     width: 49%;
+//     background-image: url(../../assets/Decor1.png);
+//     background-size: cover;
+//     width: 500px;
+//     height: 650px;
+//     position: absolute;
+//     right: 0;
+//     top: 250px;
+
+// background-image:
+// linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(138, 16, 16, 0.73)),
+// url(../../assets/Decor1.png);
+
+
+//     // -webkit-mask-image: linear-gradient(#000, rgba(0,0,0,0.1));
+//     // mask-image: linear-gradient(#fff, rgba(0,0,0,5));
+// }
+
+// h2 {
+//     margin-top: 80px;
+//     font-size: 60px;
+//     text-align: center;
+//     color: white;
+//     font-family: 'Alkatra', cursive;
+// }
+
+// h1 {
+//     font-size: 50px;
+//     text-align: center;
+//     color: white;
+//     font-family: 'Alkatra', cursive;
+// }
+
+// p {
+//     margin-top: 40px;
+//     text-align: center;
+//     color: white;
+// }
