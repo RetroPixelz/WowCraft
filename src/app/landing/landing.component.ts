@@ -10,14 +10,16 @@ export class LandingComponent {
 
   constructor (private verify: VerifyService) {}
 
+  userId = sessionStorage.getItem("userId");
 
   //PARSE 
   // Verified = JSON.parse(sessionStorage.getItem("details"))
-  Verified = sessionStorage.getItem('details')
   // VerifiedObject = JSON.parse("this.Verified")
 
+  // Verified = sessionStorage.getItem('details')
+
 ngOnInit() {
-  // console.log(this.VerifiedObject)
+  console.log(this.userId)
 }
 
 }

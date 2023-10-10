@@ -9,6 +9,8 @@ export class CraftService {
 
   constructor(private http: HttpClient) {}
 
+  userId = sessionStorage.getItem("userId");
+
   url = "http://localhost:3000/recipe"
 
   //func to get all recipes
@@ -17,7 +19,7 @@ export class CraftService {
   }
 
   //method to craft a recipe
-  craftRecipe(recipeId: string) {
-    return this.http.post<any>(`${this.url}/craft`, {recipeId})
+  craftRecipe(recipeId: string, userId: string) {
+    return this.http.post<any>(`${this.url}/craft`, {recipeId, userId})
   }
 }

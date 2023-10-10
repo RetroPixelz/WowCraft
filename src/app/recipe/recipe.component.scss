@@ -55,7 +55,7 @@
     width: 95%;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: 'Alkatra', cursive;
     border: 0.1px solid #FEE62B;
     padding-top: 5px;
@@ -71,19 +71,16 @@
     width: 95%;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 20px;
-
+    border-radius: 10px;
     border: 0.1px solid red;
     padding-top: 5px;
     color: white;
     font-family: 'Alkatra', cursive;
-
 }
 
 .CraftingButtonBad:hover {
     background: #cc2b2b;
 }
-
 
 p {
     text-align: center;

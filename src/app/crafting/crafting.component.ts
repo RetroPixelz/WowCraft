@@ -33,6 +33,8 @@ export class CraftingComponent {
   username = new FormControl("");
   password = new FormControl("");
 
+  activeLocation: string | null = null;
+
 
   // if(this.Verified) {
 
@@ -104,7 +106,7 @@ LocationOne() {
   this.Stormwind = false;
   this.ThunderBluff = false;
   this.isLoading = false
-
+  this.activeLocation = 'Ogrimmar';
    
 }
 
@@ -115,7 +117,7 @@ LocationTwo() {
   this.Stormwind = true;
   this.ThunderBluff = false;
   this.isLoading = false
-
+  this.activeLocation = 'Stormwind';
 }
 
 LocationThree() {
@@ -125,14 +127,15 @@ LocationThree() {
   this.Stormwind = false;
   this.ThunderBluff = true;
   this.isLoading = false
+  this.activeLocation = 'Thunder Bluff';
  
 }
 
 ngOnInit() {
   // this.getRecipes()
-  this.LocationOne(),
-  this.LocationTwo(),
   this.LocationThree(),
+  this.LocationTwo(),
+  this.LocationOne(),
   this.CheckValidLogin()
   // console.log(this.Verified)
   // console.log()

@@ -24,37 +24,126 @@ export class LoginComponent {
   proffession = new FormControl("");
 
 
-  notVerified = false
+  notVerified: boolean = false
+  errorMessage: string = '';
 
   details = ""
 
   CheckVerification() {
     try {
-      this.verify.CheckVerifications(this.username.value!, this.password.value!).subscribe((Response) => {
-        if (Response.success) {
-          console.log(this.username)
-          console.log("Verified Successfully")
-          this.isVerified = true;
-
-          sessionStorage.setItem(
-            "Verified",
-            JSON.stringify(this.isVerified = true)
-          );
-
-          this.router.navigateByUrl('/Landing')
-        } else {
-          console.log("Verified Unsuccessfull")
-          this.isVerified = false;
-          this.notVerified = true;
-        }
-      })
+      // Replace this with your actual authentication logic
+      const enteredUsername = this.username.value;
+      const enteredPassword = this.password.value;
+  
+      if (enteredUsername && enteredPassword) {
+        // Authentication logic here
+        // For example, you can call your VerifyService here
+  
+        this.verify.CheckVerifications(enteredUsername!, enteredPassword!).subscribe((Response) => {
+          if (Response.success) {
+            console.log(this.username);
+            console.log("Verified Successfully");
+            this.isVerified = true;
+  
+            // Save userId and isVerified status in sessionStorage
+            sessionStorage.setItem("userId", Response.userId); // Save userId
+            sessionStorage.setItem(
+              "Verified",
+              JSON.stringify(this.isVerified)
+            );
+  
+            this.router.navigateByUrl('/Landing');
+          } else {
+            console.log("Verification Unsuccessful");
+            this.isVerified = false;
+            this.notVerified = true;
+            this.errorMessage = 'Invalid username or password';
+          }
+        });
+      } else {
+        this.notVerified = true;
+        this.errorMessage = 'Username and password are required';
+      }
     } catch (error) {
-      this.notVerified = true
-
-      console.log("there was a problem, please try again later")
+      this.notVerified = true;
+      this.errorMessage = 'There was a problem, please try again later';
+      console.error(error);
     }
-
   }
+  
+
+
+  // CheckVerification() {
+  //   try {
+  //     // Replace this with your actual authentication logic
+  //     const enteredUsername = this.username.value;
+  //     const enteredPassword = this.password.value;
+  
+  //     if (enteredUsername && enteredPassword) {
+  //       // Authentication logic here
+  //       // For example, you can call your VerifyService here
+  
+  //       this.verify.CheckVerifications(enteredUsername!, enteredPassword!).subscribe((Response) => {
+  //         if (Response.success) {
+  //           console.log(this.username);
+  //           console.log("Verified Successfully");
+  //           this.isVerified = true;
+  
+  //           sessionStorage.setItem(
+  //             "Verified",
+  //             JSON.stringify(this.isVerified)
+  //           );
+  
+  //           this.router.navigateByUrl('/Landing');
+  //         } else {
+  //           console.log("Verification Unsuccessful");
+  //           this.isVerified = false;
+  //           this.notVerified = true;
+  //           this.errorMessage = 'Invalid username or password';
+  //         }
+  //       });
+  //     } else {
+  //       this.notVerified = true;
+  //       this.errorMessage = 'Username and password are required';
+  //     }
+  //   } catch (error) {
+  //     this.notVerified = true;
+  //     this.errorMessage = 'There was a problem, please try again later';
+  //     console.error(error);
+  //   }
+  // }
+  
+
+
+  // CheckVerification() {
+  //   try {
+  //     this.verify.CheckVerifications(this.username.value!, this.password.value!).subscribe((Response) => {
+  //       if (Response.success) {
+  //         console.log(this.username)
+  //         console.log("Verified Successfully")
+  //         this.isVerified = true;
+
+  //         sessionStorage.setItem(
+  //           "Verified",
+  //           JSON.stringify(this.isVerified = true)
+  //         );
+
+  //         this.router.navigateByUrl('/Landing')
+  //       } else {
+  //         console.log("Verified Unsuccessfull")
+  //         this.isVerified = false;
+  //         this.notVerified = true;
+  //         this.errorMessage = "Invalid username or password"
+  //       }
+  //     })
+  //   } catch (error) {
+  //     this.notVerified = true
+  //     this.errorMessage = "Username and password are required"
+
+  //     console.log("there was a problem, please try again later")
+  //   }
+
+  // }
 
   ngOnInit() {
 

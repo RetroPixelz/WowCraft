@@ -60,9 +60,8 @@
 } 
 
 .usernameModal {
-    position: absolute;
-    left: 325px;
-    bottom: 65px;
+    margin: auto;
+    
     width: 300px;
     height: 30px;
     background-color: rgba(255, 0, 0, 0.507);
@@ -93,9 +92,9 @@
     color: white;
 }
 
-.explore:hover {
+// .explore:hover {
     
-}
+// }
 
 
 h2 {

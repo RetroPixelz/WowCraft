@@ -45,7 +45,7 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
 }
@@ -61,7 +61,7 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.603);
     margin-right: 20px;
     margin-left: 20px;
@@ -78,7 +78,7 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
 }
@@ -254,6 +254,12 @@ h2 {
     font-size: 20px;
 }
 
+
+.active-location {
+    background-color: #17c52e; /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+    font-weight: bold; /* You can adjust the font weight */
+  }
 
 // .BackGround {
 //     height: 100vh;

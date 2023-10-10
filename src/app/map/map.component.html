@@ -51,16 +51,16 @@
 
         <div class="LocationNav">
 
-            <div (click)="LocationOne()" class="LocationOne">
+            <div (click)="LocationOne()" class="LocationOne" [class.active-location]="activeLocation === 'Ogrimmar'">
                 <div class="LocationOneImage"></div>
                 <h4>Ogrimmar</h4>
             </div>
 
-            <div (click)="LocationTwo()" class="LocationTwo">
+            <div (click)="LocationTwo()" class="LocationTwo" [class.active-location]="activeLocation === 'Stormwind'">
                 <h4>StormWind</h4>
             </div>
 
-            <div (click)="LocationThree()" class="LocationThree">
+            <div (click)="LocationThree()" class="LocationThree" [class.active-location]="activeLocation === 'Thunder Bluff'">
                 <h4>Thunder Bluff</h4>
             </div>
 

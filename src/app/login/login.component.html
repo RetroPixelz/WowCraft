@@ -16,7 +16,7 @@
                     <input [formControl]="username" matInput placeholder="Ex. Jeff" type="text" >
                   </mat-form-field>
 
-                  <div *ngIf="notVerified" class="usernameModal">Invalid username or password </div>
+                 
                   
                   <mat-form-field class="Proffession">
                     <mat-label>Password</mat-label>
@@ -24,9 +24,10 @@
                   </mat-form-field>
 
                   <button (click)="CheckVerification()" class="VerifyButton">Verify!</button>
-                  
+                 
             </form>
             <h2 class="ToRegister" routerLink="/Register" routerLinkActive="active" ariaCurrentWhenActive="page">Register</h2>
+            <div *ngIf="notVerified" class="usernameModal">{{ errorMessage }}</div> 
         </div>
 
 

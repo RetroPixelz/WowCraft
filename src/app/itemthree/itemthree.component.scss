@@ -2,7 +2,7 @@
     width: 200px;
     height: 350px;
     background-color: rgba(0, 0, 0, 0.603);
-    border-radius: 20px;
+    border-radius: 10px;
     // border: 1px solid white;
     position: relative;
     margin-left: 10px;
@@ -59,6 +59,7 @@ h3 {
     text-align: center;
     height: 25px;
     width: 60px;
+    color: white;
 }
 
 .More {
@@ -82,10 +83,11 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 50px;
+    height: 40px;
     margin-top: 20px;
     width: 90%;
     border-radius: 8px;
+    padding-top: 10px;
 }
 
 .updateButton:hover {

@@ -6,6 +6,9 @@ import { Recipe } from '../models/recipe';
   providedIn: 'root'
 })
 export class CraftthreeService {
+
+  userId = sessionStorage.getItem("userId");
+
   constructor(private http: HttpClient) {}
 
   url = "http://localhost:3000/recipeThree"
@@ -16,7 +19,7 @@ export class CraftthreeService {
   }
 
   //method to craft a recipe
-  craftRecipe(recipeId: string) {
-    return this.http.post<any>(`${this.url}/craft`, {recipeId})
+  craftRecipe(recipeId: string, userId: string) {
+    return this.http.post<any>(`${this.url}/craft`, {recipeId, userId})
   }
 }
