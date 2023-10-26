@@ -15,7 +15,9 @@ export class RecipeComponent {
 
   listOfRecipes: Recipe[] = [];
 
-  isCrafting = false;
+  // isCrafting = false;
+  isCrafting = true;
+
 
   isLoading = false;
 
@@ -26,7 +28,7 @@ export class RecipeComponent {
  
     this.craft.getAllRecipes().subscribe((data) => {
     this.listOfRecipes = data
-    this.isCrafting = false
+    // this.isCrafting = false
     this.isLoading = false
     
     })

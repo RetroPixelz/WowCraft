@@ -1,7 +1,6 @@
 .InventoryInfo {
     width: 50%;
     height: 325px;
-    // background-color: red;
     margin: auto;
     margin-top: 50px;
     text-align: center;
@@ -11,7 +10,6 @@
 .InfoImage {
     width: 160px;
     height: 200px;
-    // background-color: blue;
     background-image: url(../../assets/One.png);
     background-size: contain;
     margin: auto;
@@ -27,7 +25,6 @@
     font-family: 'Alkatra', cursive;
     font-size: 20px;
     color: white;
-
 }
 
 .MapSectioning {
@@ -35,8 +32,6 @@
 }
 
 .MapHere {
-    // margin-left: 100px;
-    // margin-top: 100px;
     margin: auto;
     width: 35%;
     height: 400px;
@@ -72,20 +67,16 @@
     height: 80px;
     left: 190px;
     transition: ease-in-out 0.2s;
-    
 }
 
 .hover {
     width: 300px;
     height: 300px;
-    // background-color: red;
     position: absolute;
     left: -450px;
     flex-direction: column;
     text-align: center;
-    // border: 1px solid white;
     border-radius: 10px;
-    
 }
 
 .HordeImage {
@@ -167,13 +158,6 @@
     transition: ease-in-out 0.2s;
 }
 
-// .LocationOneImage {
-//     background-image: url(../../assets/Horde.png);
-//     background-size: cover;
-//     height: 40px;
-//     width: 40px;
-//     z-index: 999;
-// }
 
 .LocationTwo {
     flex: 1;
@@ -241,9 +225,9 @@ p {
 
 }
 
-/* Define styles for the active location */
+
 .active-location {
-    background-color: #17c52e; /* Change to your desired background color */
-    color: #fff; /* Change to your desired text color */
-    font-weight: bold; /* You can adjust the font weight */
-  }
+    background-color: #17c52e69;
+    color: #fff;
+    font-weight: bold;
+}

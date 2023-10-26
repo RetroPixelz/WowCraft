@@ -1,8 +1,6 @@
-
 .InventoryInfo {
-    width: 50%;
+    width: 70%;
     height: 100vh;
-    // background-color: red;
     margin: auto;
     margin-top: 50px;
     text-align: center;
@@ -11,7 +9,6 @@
 .InfoImage {
     width: 160px;
     height: 200px;
-    // background-color: blue;
     background-image: url(../../assets/Three.png);
     background-size: contain;
     margin: auto;
@@ -27,9 +24,29 @@
     font-family: 'Alkatra', cursive;
     font-size: 20px;
     color: white;
-
 }
 
 .hehe {
     height: 500px;
+}
+
+.CraftedItemSection {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.CraftedItem {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 15px;
+    float: left;
+    margin: 15px;
+    color: white;
+}
+
+.CraftingImage {
+    padding-top: 10px;
 }

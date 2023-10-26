@@ -3,7 +3,6 @@
     height: 350px;
     background-color: rgba(0, 0, 0, 0.603);
     border-radius: 10px;
-    // border: 1px solid rgb(0, 0, 0);
     position: relative;
     margin-left: 10px;
     float: left;
@@ -11,12 +10,9 @@
     text-align: center;
 }
 
-
-
 .ItemImage {
     width: 150px;
     height: 150px;
-
     background-size: cover;
     margin: auto;
     margin-top: 20px;
@@ -25,25 +21,20 @@
 p {
     text-align: center;
     color: white;
-
 }
 
 h3 {
     text-align: center;
     color: white;
     margin-top: 10px;
-
 }
 
 .Quantity {
-
     display: flex;
     flex-direction: row;
-
     flex-basis: 20%;
     justify-content: center;
     align-items: center;
-
     margin-top: 20px;
 
 }
