@@ -48,13 +48,19 @@
     background-color: rgba(0, 0, 0, 0.432);
     border-radius: 10px;
     font-family: 'Alkatra', cursive;
-    border: 0.1px solid #FEE62B;
+    // border: 0.1px solid #FEE62B;
+    border: 0.1px solid #e89611bb;
+
+    // background-color: #e89611bb;
+
     padding-top: 5px;
     color: white;
 }
 
 .CraftingButton:hover {
-    background: #FEE62B;
+    // background: #FEE62B;
+    background: #e89611bb;
+
     color: black;
 }
 
@@ -82,11 +88,11 @@ p {
 
 .busyCrafting {
     width: 250px;
-    height: 50px;
-    background-color: #17c52eb6;
+    // height: 50px;
+    background-color: #e89611bb;
     border-radius: 15px;
     // justify-content: center;
-    // align-items: center;
+    align-items: center;
     border: 1px solid black;
     z-index: 999;
     // position: absolute;
@@ -96,7 +102,7 @@ p {
 
 .craftingSection {
     width: 400px;
-    background-color: red;
+    // background-color: red;
     margin: auto;
     align-items: center;
     height: 60px;

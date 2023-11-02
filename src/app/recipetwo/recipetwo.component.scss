@@ -6,8 +6,10 @@
 
 .busyCrafting {
     width: 250px;
-    height: 50px;
-    background-color: #17c52eb6;
+    // height: 50px;
+    // background-color: #17c52eb6;
+    background-color: #e89611bb;
+
     border-radius: 15px;
     margin: auto;
     border: 1px solid black;
@@ -54,14 +56,16 @@
     height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
     border-radius: 10px;
-    border: 0.1px solid #E89411;
+    // border: 0.1px solid #E89411;
+    border: 0.1px solid #e89611bb;
+
     padding-top: 5px;
     color: white;
     font-family: 'Alkatra', cursive;
 }
 
 .CraftingButton:hover {
-    background: #FEE62B;
+    background: #e89611bb;
     color: black;
 }
 
