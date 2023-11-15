@@ -26,42 +26,12 @@ export class CraftingComponent {
 
   isLoading = false;
 
-  // Verified = JSON.parse(sessionStorage.getItem('Verified'))
-  
   details = ''
 
   username = new FormControl("");
   password = new FormControl("");
 
   activeLocation: string | null = null;
-
-
-  // if(this.Verified) {
-
-  // }
-  // AlreadyVerified() {
-  //   try {
-  //     this.Verified === true
-      
-  //   } catch (error) {
-      
-  //   }
-    
-  // }
-
-
-
-  // CheckVerification() {
-  //   this.verify.CheckVerifications(this.username.value!, this.password.value!).subscribe((Response) => {
-  //     if(Response.success) {
-  //       console.log("Verfifeid successfully")
-  //       this.isVerified = true
-  //     } else {
-  //       this.isVerified = false
-  //     }
-  //   })
-  // }
-
 
   CheckValidLogin() {
     if(!sessionStorage.getItem('Verified')) {
@@ -70,49 +40,19 @@ export class CraftingComponent {
       this.isVerified = true;
 
     }
-  
   }
 
-  // getRecipes() {
-  
-  //   this.isLoading = true
-
-  //   this.craft.getAllRecipes().subscribe((data) => {
-  //   this.listOfRecipes = data
-  //   this.isCrafting = false
-  //   this.isLoading = false
-    
-  //   })
-  // } 
-
- 
-
-  // craftRecipe(recipeId: string) {
-  //   this.isCrafting = true
-  //   this.craft.craftRecipe(recipeId).subscribe((Response) => {
-  //     this.isCrafting = false
-  //     if(Response.success) {
-  //       this.getRecipes();
-  //     }
-  //   })
-  // }
-  
-
-  
 LocationOne() {
-  
   this.isLoading = true
   this.Ogrimmar = true;
   this.Stormwind = false;
   this.ThunderBluff = false;
   this.isLoading = false
   this.activeLocation = 'Ogrimmar';
-   
 }
 
 LocationTwo() {
   this.isLoading = true
-
   this.Ogrimmar = false;
   this.Stormwind = true;
   this.ThunderBluff = false;
@@ -122,7 +62,6 @@ LocationTwo() {
 
 LocationThree() {
   this.isLoading = true
-
   this.Ogrimmar = false;
   this.Stormwind = false;
   this.ThunderBluff = true;
@@ -132,15 +71,12 @@ LocationThree() {
 }
 
 ngOnInit() {
-  // this.getRecipes()
+ 
   this.LocationThree(),
   this.LocationTwo(),
   this.LocationOne(),
   this.CheckValidLogin()
-  // console.log(this.Verified)
-  // console.log()
-  // console.log(this.Verified)
-  
+
 }
 
 }

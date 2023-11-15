@@ -11,9 +11,11 @@
     width: 400px;
     height: 220px;
     background-color: rgba(0, 0, 0, 0.568);
-    border-radius: 15px;
+    border-radius: 5px;
     float: left;
     margin-top: 20px;
+    border: 1px solid #5D4D3D;
+
 }
 
 .CraftingItemDetails {
@@ -27,33 +29,38 @@
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .RecipeName {
     margin-left: 15px;
     max-width: 260px;
-    font-family: 'Alkatra', cursive;
+    // font-family: 'Alkatra', cursive;
+    font-family: 'lifecraft', cursive;
+
 }
 
 .ingredientsneeded {
     margin-left: 25px;
     color: white;
     text-align: left;
+    font-family: 'Morph', cursive;
+
 }
 
 .CraftingButton {
     width: 95%;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 10px;
-    font-family: 'Alkatra', cursive;
+    border-radius: 5px;
+    font-family: 'Morph', cursive;
     // border: 0.1px solid #FEE62B;
     border: 0.1px solid #e89611bb;
 
     // background-color: #e89611bb;
+    font-size: 20px;
 
-    padding-top: 5px;
+    // padding-top: 5px;
     color: white;
 }
 
@@ -68,11 +75,12 @@
     width: 95%;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 10px;
+    border-radius: 5px;
     border: 0.1px solid red;
-    padding-top: 5px;
+    // padding-top: 5px;
     color: white;
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
+    font-size: 20px;
 }
 
 .CraftingButtonBad:hover {
@@ -81,9 +89,11 @@
 
 p {
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     color: white;
-    padding-top: 10px;
+    padding-top: 15px;
+    font-family: 'lifecraft', cursive;
+
 }
 
 .busyCrafting {

@@ -12,6 +12,10 @@ export class LandingComponent {
 
   userId = sessionStorage.getItem("userId");
 
+  images: string[] = ['../../assets/cata.jpg', '../../assets/cata.jpg', '../../assets/cata.jpg']; // Add your image URLs here
+
+  
+
   //PARSE 
   // Verified = JSON.parse(sessionStorage.getItem("details"))
   // VerifiedObject = JSON.parse("this.Verified")

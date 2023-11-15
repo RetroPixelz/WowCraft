@@ -10,6 +10,10 @@
     text-align: center;
     color: white;
     padding-top: 25px;
+    font-family: 'lifeCraft', cursive;
+    font-size: 35px;
+    color: #e8961198;
+
 }
 
 .Loggin {
@@ -24,6 +28,8 @@
 .Username {
     width: 80%;
     margin: auto;
+    font-family: 'lifeCraft', cursive;
+
 }
 
 .Proffession {
@@ -42,17 +48,24 @@
     border-radius: 5px;
     background-color: rgba(61, 61, 59, 0.664);
     border: none;
+    font-family: 'lifeCraft', cursive;
+    font-size: 25px;
+    cursor: pointer;
+
 }
 
 .VerifyButton:hover {
-    background-color: #17c52e;
+    background-color: #e8961198;
     transition: ease-in-out 0.3s;
     color: white;
 }
 
 .ToRegister {
-    color: #17c52e;
+    color: #e8961198;
     padding-top: 20px;
+    font-family: 'folk', cursive;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .ToRegister:hover {
@@ -83,7 +96,7 @@
     // margin: auto;
     width: 200px;
     height: 50px;
-    background-color: red;
+    background-color: #e8961198;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;

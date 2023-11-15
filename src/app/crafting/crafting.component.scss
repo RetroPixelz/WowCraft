@@ -15,13 +15,14 @@
 }
 
 .InfoTitle {
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifecraft', cursive;
+
     font-size: 50px;
     color: white;
 }
 
 .InfoDescription {
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
     font-size: 20px;
     color: white;
 }
@@ -39,7 +40,7 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
 }
@@ -71,7 +72,8 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
+
     background-color: rgba(0, 0, 0, 0.603);
     // border: 1px solid white;
     // border: 1px solid #e89611;
@@ -86,10 +88,11 @@
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 25px;
     color: white;
     text-align: center;
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifecraft', cursive;
+
 }
 
 
@@ -105,7 +108,7 @@ h4 {
     width: 75%;
     margin: auto;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 .loading {
@@ -117,7 +120,7 @@ h4 {
 .busyCrafting {
     width: 250px;
     height: 50px;
-    background-color: #17c52eb6;
+    background-color: #e89611bb;
     border-radius: 15px;
     margin: auto;
     border: 1px solid black;
@@ -201,7 +204,7 @@ p {
     margin: auto;
     margin-top: 50px;
     text-align: center;
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifeCraft', cursive;
 }
 
 .warning {
@@ -216,27 +219,28 @@ p {
     width: 200px;
     height: 40px;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
-    margin-right: 20px;
-    margin-left: 20px;
+    // margin-right: 20px;
+    // margin-left: 20px;
     border: 1px solid white;
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifeCraft', cursive;
+    font-size: 22px;
 }
 
 .verify:hover {
-    background-color: rgba(22, 167, 22, 0.603);
+    background-color: #e89611bb;
 }
 
 h1 {
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifeCraft', cursive;
     color: white;
     font-size: 40px;
     margin-bottom: 40px;
 }
 
 h2 {
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
     color: white;
     font-size: 20px;
 }

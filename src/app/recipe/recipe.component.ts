@@ -15,8 +15,8 @@ export class RecipeComponent {
 
   listOfRecipes: Recipe[] = [];
 
-  // isCrafting = false;
-  isCrafting = true;
+  isCrafting = false;
+  // isCrafting = true;
 
 
   isLoading = false;

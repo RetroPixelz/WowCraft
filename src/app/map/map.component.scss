@@ -16,13 +16,13 @@
 }
 
 .InfoTitle {
-    font-family: 'Alkatra', cursive;
+    font-family: 'LifeCraft', cursive;
     font-size: 50px;
     color: white;
 }
 
 .InfoDescription {
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
     font-size: 20px;
     color: white;
 }
@@ -87,12 +87,45 @@
     margin: auto;
 }
 
+.AllianceImage {
+    background-image: url(../../assets/Alliance.png);
+    width: 200px;
+    height: 120px;
+    background-size: 100% 100%;
+    align-items: center;
+    margin: auto;
+    // background-color: blue;
+}
+
+.ThunderBluffImage {
+    background-image: url(../../assets/ThunderBluff.png);
+    width: 200px;
+    height: 120px;
+    background-size: 100% 100%;
+    align-items: center;
+    margin: auto;
+}
+
 .hoverTwo {
     width: 300px;
     height: 300px;
-    background-color: blue;
     position: absolute;
     left: -450px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    // background-color: red;
+}
+
+.hoverThree {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -450px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    // background-color: blue;
 }
 
 .Alliance {
@@ -192,10 +225,10 @@
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 25px;
     color: white;
     text-align: center;
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifecraft', cursive;
 
 }
 
@@ -214,14 +247,16 @@ h4 {
 
 h1 {
     color: white;
-    font-family: 'Alkatra', cursive;
+    font-family: 'LifeCraft', cursive;
+    font-size: 30px;
 
 }
 
 
 p {
     color: white;
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
+    font-size: 16px;
 
 }
 

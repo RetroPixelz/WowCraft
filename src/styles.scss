@@ -27,7 +27,24 @@
 
 //SCROLLBAR//
 
+@font-face {
+  font-family: 'LifeCraft';
+  src: url('./assets/fonts/LifeCraft_Font.ttf') format('truetype');
+  font-weight: normal;
+}
 
+
+@font-face {
+  font-family: 'Folk';
+  src: url('./assets/fonts/folkard.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Morph';
+  src: url('./assets/fonts/MORPHEUS.ttf') format('truetype');
+  font-weight: normal;
+}
 
 // body {
 //     // overflow: hidden; /* Hide scrollbars */
@@ -40,11 +57,11 @@ html {
 
 .BackGround { 
     z-index: 0;
-    background-image: linear-gradient(45deg,
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)),
-     url(../src/assets/Background3.png);
-    // background-color: #0F1E25;
+    // background-image: linear-gradient(45deg,
+    // rgba(0, 0, 0, 0.7),
+    // rgba(0, 0, 0, 0.7)),
+    //  url(../src/assets/Background3.png);
+    background-color: #212121;
     padding-top: 60px;
     // background-repeat: no-repeat;
     background-attachment: fixed;
@@ -53,4 +70,13 @@ html {
     // height: auto;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body { 
+  margin: 0;
+  // font-family: Roboto, "Helvetica Neue", sans-serif; 
+  font-family: 'LifeFont', sans-serif;
+  font-family: 'folkard', sans-serif;
+  font-family: 'Morph', sans-serif;
+
+
+}

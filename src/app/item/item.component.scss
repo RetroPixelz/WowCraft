@@ -8,7 +8,11 @@
     float: left;
     margin-top: 10px;
     text-align: center;
+    border: 1px solid #5D4D3D;
+    
+
 }
+
 
 .ItemImage {
     width: 150px;
@@ -21,12 +25,16 @@
 p {
     text-align: center;
     color: white;
+    font-family: 'Morph', cursive;
+
 }
 
 h3 {
     text-align: center;
     color: white;
     margin-top: 10px;
+    font-family: 'lifeCraft', cursive;
+    font-size: 20px;
 }
 
 .Quantity {
@@ -36,6 +44,8 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    font-family: 'Morph', cursive;
+
 
 }
 
@@ -55,7 +65,7 @@ h3 {
 .Amount {
     background-color: red;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgba(61, 61, 59, 0.664);
     text-align: center;
     height: 25px;
