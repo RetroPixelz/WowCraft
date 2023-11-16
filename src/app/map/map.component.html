@@ -13,54 +13,56 @@
             <br/>
             Feel free to update the amount of stock you have
         </h2>
-        <!-- <h2 class="InfoDescription">Welcome to your inventory, here you can look at and manage all your items</h2> -->
-    
+        
     </div>
 
     <div class="MapSectioning">
         
-        <div class="MapHere" >
+        <div class="MapHere"  >
             <a>
                 <div class="Horde" (click)="ShowOne()"></div>
                 
                 <div *ngIf="show" class="hover">
                     <div class="HordeImage"></div>
                     <h1>Ogrimmar </h1>
-                    <p>The capital of the horde faction of the world of warcraft</p>
+                    <p>Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs' new homeland. Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world.</p>
                 </div>
             </a>
             <a>
                 <div class="Alliance" (click)="ShowTwo()"></div>
                 <div *ngIf="show2" class="hoverTwo">
-
+                    <div class="AllianceImage"></div>
+                    <h1>StormWind </h1>
+                    <p>Stormwind is the jewel of the Alliance in Azeroth. The grandest human city left, it has weathered three wars, ransacking by the orcs, and invasions by the Alliance to take it back. Although mostly a human city, Stormwind does house dwarves, high elves, night elves, worgen, pandaren, and other Alliance races.</p>
                 </div>
             </a>
             <a>
-                <div class="ThunderBluff"></div>
+                <div class="ThunderBluff" (click)="ShowThree()"></div>
+                <div *ngIf="show3" class="hoverThree">
+                    <div class="ThunderBluffImage"></div>
+                    <h1>Thunder Bluff </h1>
+                    <p>This is one of the major Horde cities. It's in an isolated area on a high mesa in the plains of Mulgore in the eastern continent of Kalimdor. This zone is west of the Barrens, east of the lonely hills of Desolace, and is the home of the Tauren, staunch allies of Thrall and members of the Horde</p>
+                </div>
             </a>
         </div>
         
-        <!-- <div class="IllustrationTwo">
-
-
-        </div> -->
-
+  
     </div>
 
     <div class="StockSection">
 
         <div class="LocationNav">
 
-            <div (click)="LocationOne()" class="LocationOne">
+            <div (click)="LocationOne()" class="LocationOne" [class.active-location]="activeLocation === 'Ogrimmar'">
                 <div class="LocationOneImage"></div>
                 <h4>Ogrimmar</h4>
             </div>
 
-            <div (click)="LocationTwo()" class="LocationTwo">
+            <div (click)="LocationTwo()" class="LocationTwo" [class.active-location]="activeLocation === 'Stormwind'">
                 <h4>StormWind</h4>
             </div>
 
-            <div (click)="LocationThree()" class="LocationThree">
+            <div (click)="LocationThree()" class="LocationThree" [class.active-location]="activeLocation === 'Thunder Bluff'">
                 <h4>Thunder Bluff</h4>
             </div>
 

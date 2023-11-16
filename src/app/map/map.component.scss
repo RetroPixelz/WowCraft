@@ -1,7 +1,6 @@
 .InventoryInfo {
     width: 50%;
     height: 325px;
-    // background-color: red;
     margin: auto;
     margin-top: 50px;
     text-align: center;
@@ -11,23 +10,21 @@
 .InfoImage {
     width: 160px;
     height: 200px;
-    // background-color: blue;
     background-image: url(../../assets/One.png);
     background-size: contain;
     margin: auto;
 }
 
 .InfoTitle {
-    font-family: 'Alkatra', cursive;
+    font-family: 'LifeCraft', cursive;
     font-size: 50px;
     color: white;
 }
 
 .InfoDescription {
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
     font-size: 20px;
     color: white;
-
 }
 
 .MapSectioning {
@@ -35,8 +32,6 @@
 }
 
 .MapHere {
-    // margin-left: 100px;
-    // margin-top: 100px;
     margin: auto;
     width: 35%;
     height: 400px;
@@ -65,6 +60,7 @@
     position: absolute;
     left: 200px;
     bottom: 150px;
+    cursor: pointer;
 }
 
 .Horde:hover {
@@ -72,20 +68,18 @@
     height: 80px;
     left: 190px;
     transition: ease-in-out 0.2s;
-    
 }
 
 .hover {
     width: 300px;
     height: 300px;
-    // background-color: red;
     position: absolute;
     left: -450px;
     flex-direction: column;
     text-align: center;
-    // border: 1px solid white;
     border-radius: 10px;
-    
+   
+
 }
 
 .HordeImage {
@@ -96,12 +90,45 @@
     margin: auto;
 }
 
+.AllianceImage {
+    background-image: url(../../assets/Alliance.png);
+    width: 200px;
+    height: 120px;
+    background-size: 100% 100%;
+    align-items: center;
+    margin: auto;
+    // background-color: blue;
+}
+
+.ThunderBluffImage {
+    background-image: url(../../assets/ThunderBluff.png);
+    width: 200px;
+    height: 120px;
+    background-size: 100% 100%;
+    align-items: center;
+    margin: auto;
+}
+
 .hoverTwo {
     width: 300px;
     height: 300px;
-    background-color: blue;
     position: absolute;
     left: -450px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    // background-color: red;
+}
+
+.hoverThree {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -450px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    // background-color: blue;
 }
 
 .Alliance {
@@ -112,6 +139,8 @@
     position: absolute;
     right: 200px;
     bottom: 100px;
+    cursor: pointer;
+
 }
 
 .Alliance:hover {
@@ -129,6 +158,8 @@
     position: absolute;
     left: 125px;
     bottom: 100px;
+    cursor: pointer;
+
 }
 
 .ThunderBluff:hover {
@@ -157,9 +188,11 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
+    cursor: pointer;
+
 }
 
 .LocationOne:hover {
@@ -167,24 +200,19 @@
     transition: ease-in-out 0.2s;
 }
 
-// .LocationOneImage {
-//     background-image: url(../../assets/Horde.png);
-//     background-size: cover;
-//     height: 40px;
-//     width: 40px;
-//     z-index: 999;
-// }
 
 .LocationTwo {
     flex: 1;
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
+    border: 1px solid white;
     margin-right: 20px;
     margin-left: 20px;
-    border: 1px solid white;
+    cursor: pointer;
+
 }
 
 .LocationTwo:hover {
@@ -197,9 +225,11 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
+    cursor: pointer;
+
 }
 
 .LocationThree:hover {
@@ -208,10 +238,10 @@
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 25px;
     color: white;
     text-align: center;
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifecraft', cursive;
 
 }
 
@@ -230,13 +260,23 @@ h4 {
 
 h1 {
     color: white;
-    font-family: 'Alkatra', cursive;
+    font-family: 'LifeCraft', cursive;
+    font-size: 30px;
 
 }
 
 
 p {
     color: white;
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
+    font-size: 16px;
 
+}
+
+
+.active-location {
+    // background-color: #17c52e69;
+    background-color: #e8961198;
+    color: #fff;
+    font-weight: bold;
 }

@@ -3,6 +3,7 @@
 
 
     <div appAuthOnly [isVerified]="isVerified" class="InventoryInfo">
+
         <div class="InfoImage">
 
         </div>
@@ -18,6 +19,7 @@
     
 
     <div appAuthOnly [isVerified]="!isVerified" class="loginFirst">
+
         <div class="warning"></div>
         <h1 >So you want to get Crafting ? </h1>
         <h2 >before you become a Master Crafter, We need to verify who you are</h2>
@@ -26,29 +28,23 @@
             <button class="verify"> Login </button>
         </a>
 
-<!-- <input [formControl]="username" >
-<input [formControl]="password" > -->
-
-<!-- <button (click)="CheckVerification()"></button> -->
-
 
     </div>
 
 
-    <div appAuthOnly [isVerified]="isVerified" class="LocationNav">
-        <div (click)="LocationOne()" class="LocationOne">
+    <div appAuthOnly [isVerified]="isVerified" class="LocationNav"> 
+        <div (click)="LocationOne()" class="LocationOne" [class.active-location]="activeLocation === 'Ogrimmar'">
             <h4>Ogrimmar</h4>
         </div>
-        <div (click)="LocationTwo()" class="LocationTwo">
+        <div (click)="LocationTwo()" class="LocationTwo" [class.active-location]="activeLocation === 'Stormwind'">
             <h4>StormWind</h4>
         </div>
-        <div (click)="LocationThree()" class="LocationThree">
+        <div (click)="LocationThree()" class="LocationThree" [class.active-location]="activeLocation === 'Thunder Bluff'">
             <h4>Thunder Bluff</h4>
         </div>
 
     </div>
     <div appAuthOnly [isVerified]="isVerified" class="CraftingPageSection">
-        
 
 
 

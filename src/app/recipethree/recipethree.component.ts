@@ -11,7 +11,7 @@ import { CraftthreeService } from '../services/craftthree.service';
 export class RecipethreeComponent {
 
   constructor (private craft: CraftthreeService) {}
-
+  userId = sessionStorage.getItem("userId");
 
   listOfRecipes: Recipe[] = [];
 
@@ -31,9 +31,9 @@ export class RecipethreeComponent {
     })
   } 
 
-  craftRecipe(recipeId: string) {
+  craftRecipe(recipeId: string,userId: string) {
     this.isCrafting = true
-    this.craft.craftRecipe(recipeId).subscribe((Response) => {
+    this.craft.craftRecipe(recipeId, userId).subscribe((Response) => {
       this.isCrafting = false
       if(Response.success) {
         this.getRecipes();

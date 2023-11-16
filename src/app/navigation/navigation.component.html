@@ -1,18 +1,16 @@
 <div class="toolbar" role="banner">
     <img
-      width="200"
+      width="100"
       src="../assets/LOGO.png"
     />
     
+
       <div class="spacer"></div>
-      <a routerLink="/Landing" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-      
-      <a routerLink="/Map" routerLinkActive="active Current" ariaCurrentWhenActive="page">Inventory</a>
-      
-      <a routerLink="/Crafting" routerLinkActive="active Current" ariaCurrentWhenActive="page">Crafting</a>
-  
-      <a routerLink="/Profile" routerLinkActive="active Current" ariaCurrentWhenActive="page">Profile</a>
-  
+      <a routerLink="/Landing" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/Map" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inventory</a>
+      <a routerLink="/Crafting" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Crafting</a>
+      <a routerLink="/Profile" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Profile</a>
+    
 
       <a appAuthOnly [isVerified]="!isVerified" routerLink="/Login" routerLinkActive="active Current" ariaCurrentWhenActive="page">Login</a>
 

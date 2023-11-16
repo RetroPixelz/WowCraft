@@ -66,7 +66,10 @@
 
 <!-- header image of project -->
 
-![image1](src/assets/Mock1.png)
+<!-- ![image1](src/assets/Mock1.png) -->
+<p align="center">
+<img src="src/assets/Mock4.png" alt="Image 1" width="500" height="400">
+</p>
 
 ### Project Description
 
@@ -125,17 +128,23 @@ Here are a couple of ways to clone this repo:
 
 ### Login & Signup
 
-![image5](src/assets/Mock2.png)
+<p align="center">
+<img src="src/assets/Mock1.png" alt="Image 1" width="500" height="400">
+</p>
 The user that accesses the application can register or login for the application.
 
 ### Locations and Items
 
-![image6](src/assets/Mock5.png)
+<p align="center">
+<img src="src/assets/Mock2.png" alt="Image 1" width="500" height="400">
+</p>
 The user has the options to access three different locations with their own items, the user can update each item based on that location.
 
 ### Craft a Recipe
 
-![image7](src/assets/Mock1.png)
+<p align="center">
+<img src="src/assets/Mock3.png" alt="Image 1" width="500" height="400">
+</p>
 The User can craft a recipe based on location and availability of ingredients in that location.
 
 <!-- ### Only Head Receptionist can add
@@ -154,12 +163,17 @@ With the theme being world of warcraft i decided to make everything kind of dark
 
 ### Mood Board
 
-![image9](src/assets/MoodBoard.png)
 
+<p align="center">
+<img src="src/assets/MoodBoard.png" alt="Image 1" width="500" height="400">
+</p>
 ### Wireframes
 
-![image10](src/assets/Wireframes.png)
 
+
+<p align="center">
+<img src="src/assets/Wireframes.png" alt="Image 1" width="500" height="400">
+</p>
 
 ## Development Process
 
@@ -206,11 +220,7 @@ The `Development Process` is the technical implementations and functionality don
 
 <!-- TODO Change this -->
 
-![image2](src/assets/Mock1.png)
-![image3](src/assets/Mock2.png)
-![image4](src/assets/Mock3.png)
-![image5](src/assets/Mock4.png)
-![image11](src/assets/Mock5.png)
+
 
 <br>
 

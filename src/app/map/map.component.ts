@@ -20,54 +20,66 @@ export class MapComponent {
   loading = false
 
   show = false
-  show2 = false
+  show2 = true
+  show3 = false
 
-
-
+  activeLocation: string | null = null;
 
   constructor() { }
 
   ShowOne() {
     this.show = true
     this.show2 = false
-
+    this.show3 = false
   }
 
   ShowTwo() {
     this.show = false
     this.show2 = true
+    this.show3 = false
+  }
+
+  ShowThree() {
+    this.show = false
+    this.show2 = false
+    this.show3 = true
   }
 
   off() {
     this.show = false
+    this.show2 = false
+    this.show3 = false
   }
 
   LocationOne() {
     this.Ogrimmar = true;
     this.Stormwind = false;
     this.ThunderBluff = false;
-    console.log("clicked");
+    this.activeLocation = 'Ogrimmar';
   }
 
   LocationTwo() {
     this.Ogrimmar = false;
     this.Stormwind = true;
     this.ThunderBluff = false;
-
-    console.log("clicked 2");
+    this.activeLocation = 'Stormwind'; 
   }
 
   LocationThree() {
     this.Ogrimmar = false;
     this.Stormwind = false;
     this.ThunderBluff = true;
-    console.log("clicked 3");
+    this.activeLocation = 'Thunder Bluff';
   }
 
   ngOnInit() {
-    this.LocationOne(),
+      this.LocationThree(),
       this.LocationTwo(),
-      this.LocationThree()
+      this.LocationOne()
+      this.show = false
+      this.show2 = false
+      this.show3 = false
+  
   }
 
 

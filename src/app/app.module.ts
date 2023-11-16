@@ -24,11 +24,7 @@ import { RecipetwoComponent } from './recipetwo/recipetwo.component';
 import { RecipethreeComponent } from './recipethree/recipethree.component';
 import { ModalComponent } from './modal/modal.component';
 import { ProfileComponent } from './profile/profile.component'
-
-
-
-
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -62,7 +58,8 @@ import { ProfileComponent } from './profile/profile.component'
     MatInputModule,
     MatSlideToggleModule,
     MatFormFieldModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

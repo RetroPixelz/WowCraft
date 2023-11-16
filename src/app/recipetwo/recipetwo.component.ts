@@ -11,7 +11,7 @@ import { CrafttwoService } from '../services/crafttwo.service';
 export class RecipetwoComponent {
 
   constructor (private craft: CrafttwoService) {}
-
+  userId = sessionStorage.getItem("userId");
 
   listOfRecipes: Recipe[] = [];
 
@@ -30,9 +30,9 @@ export class RecipetwoComponent {
     })
   } 
 
-  craftRecipe(recipeId: string) {
+  craftRecipe(recipeId: string, userId: string) {
     this.isCrafting = true
-    this.craft.craftRecipe(recipeId).subscribe((Response) => {
+    this.craft.craftRecipe(recipeId, userId).subscribe((Response) => {
       this.isCrafting = false
     this.isLoading = false
 

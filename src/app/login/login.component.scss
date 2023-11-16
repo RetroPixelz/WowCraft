@@ -6,10 +6,14 @@
     position: relative;
 }
 
-.loginText{
+.loginText {
     text-align: center;
     color: white;
     padding-top: 25px;
+    font-family: 'lifeCraft', cursive;
+    font-size: 35px;
+    color: #e8961198;
+
 }
 
 .Loggin {
@@ -24,6 +28,8 @@
 .Username {
     width: 80%;
     margin: auto;
+    font-family: 'lifeCraft', cursive;
+
 }
 
 .Proffession {
@@ -42,27 +48,32 @@
     border-radius: 5px;
     background-color: rgba(61, 61, 59, 0.664);
     border: none;
+    font-family: 'lifeCraft', cursive;
+    font-size: 25px;
+    cursor: pointer;
+
 }
 
 .VerifyButton:hover {
-    background-color: #17c52e;
-    transition: ease-in-out 0.3s ;
-   color: white;
+    background-color: #e8961198;
+    transition: ease-in-out 0.3s;
+    color: white;
 }
 
 .ToRegister {
-    color: #17c52e;
+    color: #e8961198;
     padding-top: 20px;
+    font-family: 'folk', cursive;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .ToRegister:hover {
     text-decoration: underline;
-} 
+}
 
 .usernameModal {
-    position: absolute;
-    left: 325px;
-    bottom: 65px;
+    margin: auto;
     width: 300px;
     height: 30px;
     background-color: rgba(255, 0, 0, 0.507);
@@ -73,28 +84,23 @@
 
 .ExploreSection {
     width: 300px;
-   
     margin: auto;
     margin-top: 100px;
     text-align: center;
-    // background-color: red;
 }
 
 .explore {
-    // margin: auto;
     width: 200px;
     height: 50px;
-    background-color: red;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
     font-family: 'Alkatra', cursive;
-    // padding-top: 5px;
     color: white;
 }
 
 .explore:hover {
-    
+    background-color: #e8961198;
 }
 
 

@@ -1,28 +1,21 @@
-
 .loading {
     margin: auto;
     width: 100px;
     height: 100px;
 }
 
-.busyCrafting {
-    width: 250px;
-    height: 50px;
-    background-color: #17c52eb6;
-    border-radius: 15px;
-    margin: auto;
-    border: 1px solid black;
-}
+
 
 .CraftingItem {
     margin-left: 50px;
     width: 400px;
     height: 220px;
     background-color: rgba(0, 0, 0, 0.568);
-    border-radius: 15px;
-
+    border-radius: 5px;
     float: left;
     margin-top: 20px;
+    border: 1px solid #5D4D3D;
+
 }
 
 .CraftingItemDetails {
@@ -31,39 +24,50 @@
     height: 70%;
     display: flex;
 }
+
 .CraftingImage {
     background-size: cover;
     height: 100px;
     width: 100px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .RecipeName {
     margin-left: 15px;
     max-width: 260px;
-    font-family: 'Alkatra', cursive;
+    // font-family: 'Alkatra', cursive;
+    font-family: 'lifecraft', cursive;
 
 }
 
 .ingredientsneeded {
     margin-left: 25px;
     color: white;
+    text-align: left;
+    font-family: 'Morph', cursive;
+
 }
 
 .CraftingButton {
     width: 95%;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 20px;
-    border: 0.1px solid #E89411;
-    padding-top: 5px;
-    color: white;
-    font-family: 'Alkatra', cursive;
+    border-radius: 5px;
+    font-family: 'Morph', cursive;
+    // border: 0.1px solid #FEE62B;
+    border: 0.1px solid #e89611bb;
 
+    // background-color: #e89611bb;
+    font-size: 20px;
+
+    // padding-top: 5px;
+    color: white;
 }
 
 .CraftingButton:hover {
-    background: #FEE62B;
+    // background: #FEE62B;
+    background: #e89611bb;
+
     color: black;
 }
 
@@ -71,23 +75,47 @@
     width: 95%;
     height: 55px;
     background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 20px;
-
+    border-radius: 5px;
     border: 0.1px solid red;
-    padding-top: 5px;
+    // padding-top: 5px;
     color: white;
-    font-family: 'Alkatra', cursive;
-
+    font-family: 'Morph', cursive;
+    font-size: 20px;
 }
 
 .CraftingButtonBad:hover {
     background: #cc2b2b;
 }
 
-
 p {
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     color: white;
-    padding-top: 10px;
+    padding-top: 15px;
+    font-family: 'lifecraft', cursive;
+
+}
+
+.busyCrafting {
+    width: 250px;
+    // height: 50px;
+    background-color: #e89611bb;
+    border-radius: 15px;
+    // justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    z-index: 999;
+    // position: absolute;
+    // top: 400px;
+    margin: auto;
+}
+
+.craftingSection {
+    width: 400px;
+    // background-color: red;
+    margin: auto;
+    align-items: center;
+    height: 60px;
+    z-index: 999;
+    // position: relative;
 }

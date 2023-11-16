@@ -10,6 +10,10 @@
     text-align: center;
     color: white;
     padding-top: 25px;
+    font-family: 'lifeCraft', cursive;
+    font-size: 35px;
+    color: #e8961198;
+
 }
 
 .Loggin {
@@ -42,19 +46,26 @@
     border-radius: 5px;
     background-color: rgba(61, 61, 59, 0.664);
     border: none;
+    font-family: 'lifeCraft', cursive;
+    font-size: 25px;
+    cursor: pointer;
+
 }
 
 .VerifyButton:hover {
-    background-color: #17c52e;
+    background-color: #e8961198;
     transition: ease-in-out 0.3s;
     color: white;
 }
 
 .ToLogin {
-    color: #17c52e;
+    color: #e8961198;
     padding-top: 20px;
-}
+    font-family: 'folk', cursive;
+    font-size: 20px;
+    cursor: pointer;
 
+}
 
 .ToLogin:hover {
     text-decoration: underline;
@@ -70,4 +81,10 @@
     border-radius: 20px;
     text-align: center;
     padding-top: 15px;
+}
+
+.label {
+    width: 80%;
+    margin: auto;
+    font-family: 'lifeCraft', cursive;
 }

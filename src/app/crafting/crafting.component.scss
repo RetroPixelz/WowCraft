@@ -1,7 +1,6 @@
 .InventoryInfo {
     width: 50%;
     height: 325px;
-    // background-color: red;
     margin: auto;
     margin-top: 50px;
     text-align: center;
@@ -10,26 +9,23 @@
 .InfoImage {
     width: 160px;
     height: 200px;
-    // background-color: blue;
     background-image: url(../../assets/Two.png);
     background-size: contain;
     margin: auto;
 }
 
 .InfoTitle {
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifecraft', cursive;
+
     font-size: 50px;
     color: white;
-
 }
 
 .InfoDescription {
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
     font-size: 20px;
     color: white;
-
 }
-
 
 .LocationNav {
     padding-top: 200px;
@@ -40,20 +36,20 @@
 }
 
 .LocationOne {
-    
     flex: 1;
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
+    cursor: pointer;
+
 }
 
 .LocationOne:hover {
     background-color: rgba(83, 83, 83, 0.603);
     transition: ease-in-out 0.2s;
-    
 }
 
 .LocationTwo {
@@ -61,16 +57,18 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
-    margin-right: 20px;
-    margin-left: 20px;
     border: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+
 }
+
 .LocationTwo:hover {
     background-color: rgba(83, 83, 83, 0.603);
     transition: ease-in-out 0.2s;
-
 }
 
 .LocationThree {
@@ -78,39 +76,41 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
+    cursor: pointer;
+
 }
+
 .LocationThree:hover {
     background-color: rgba(83, 83, 83, 0.603);
     transition: ease-in-out 0.2s;
-
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 25px;
     color: white;
     text-align: center;
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifecraft', cursive;
 
 }
 
 
 .CraftingPageSection {
     margin-top: 50px;
-    height: 1200px;
-   overflow: hidden;
+    // height: 1200px;
+    overflow: hidden;
     margin-bottom: 100px;
-   }
+}
 
 .Recipes {
     height: 800px;
     width: 75%;
     margin: auto;
     text-align: center;
-    margin-top: 100px;
-}   
+    margin-top: 0px;
+}
 
 .loading {
     margin: auto;
@@ -121,12 +121,11 @@ h4 {
 .busyCrafting {
     width: 250px;
     height: 50px;
-    background-color: #17c52eb6;
+    background-color: #e89611bb;
     border-radius: 15px;
     margin: auto;
     border: 1px solid black;
 }
-
 
 .CraftingItem {
     margin-left: 50px;
@@ -143,8 +142,8 @@ h4 {
     width: 95%;
     height: 70%;
     display: flex;
-    
 }
+
 .CraftingImage {
     background-size: cover;
     height: 100px;
@@ -177,7 +176,6 @@ h4 {
 }
 
 .Decor5 {
-    // background-image: url(../../assets/Decor5.png);
     background-size: cover;
     width: 400px;
     height: 400px;
@@ -186,8 +184,6 @@ h4 {
     top: 570px;
     position: fixed;
 }
-
-
 
 p {
     text-align: center;
@@ -207,11 +203,9 @@ p {
     width: 60%;
     height: 100vh;
     margin: auto;
-    // background-color: red;
     margin-top: 50px;
     text-align: center;
-    font-family: 'Alkatra', cursive;
-
+    font-family: 'lifeCraft', cursive;
 }
 
 .warning {
@@ -222,39 +216,39 @@ p {
     height: 250px;
 }
 
-
 .verify {
     width: 200px;
     height: 40px;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
-    margin-right: 20px;
-    margin-left: 20px;
+    // margin-right: 20px;
+    // margin-left: 20px;
     border: 1px solid white;
-    font-family: 'Alkatra', cursive;
-
+    font-family: 'lifeCraft', cursive;
+    font-size: 22px;
 }
 
 .verify:hover {
-    background-color: rgba(22, 167, 22, 0.603);
-
+    background-color: #e89611bb;
 }
 
 h1 {
-    font-family: 'Alkatra', cursive;
+    font-family: 'lifeCraft', cursive;
     color: white;
     font-size: 40px;
     margin-bottom: 40px;
 }
 
 h2 {
-    font-family: 'Alkatra', cursive;
+    font-family: 'Morph', cursive;
     color: white;
     font-size: 20px;
 }
 
-
-// .BackGround {
-//     height: 100vh;
-// }
+.active-location {
+    // background-color: #17c52e69;
+    background-color: #e8961198;
+    color: #fff;
+    font-weight: bold;
+}

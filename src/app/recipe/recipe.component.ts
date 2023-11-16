@@ -11,10 +11,13 @@ export class RecipeComponent {
 
   constructor (private craft: CraftService) {}
 
+  userId = sessionStorage.getItem("userId");
 
   listOfRecipes: Recipe[] = [];
 
   isCrafting = false;
+  // isCrafting = true;
+
 
   isLoading = false;
 
@@ -25,21 +28,22 @@ export class RecipeComponent {
  
     this.craft.getAllRecipes().subscribe((data) => {
     this.listOfRecipes = data
-    this.isCrafting = false
+    // this.isCrafting = false
     this.isLoading = false
     
     })
   } 
 
-  craftRecipe(recipeId: string) {
-    this.isCrafting = true
-    this.craft.craftRecipe(recipeId).subscribe((Response) => {
-      this.isCrafting = false
-      if(Response.success) {
+  craftRecipe(recipeId: string, userId: string) {
+    this.isCrafting = true;
+    this.craft.craftRecipe(recipeId, userId).subscribe((Response) => {
+      this.isCrafting = false;
+      if (Response && Response.success) { // Check if Response is defined
         this.getRecipes();
       }
-    })
+    });
   }
+
 
   
 ngOnInit() {

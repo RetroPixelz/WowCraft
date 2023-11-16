@@ -2,14 +2,17 @@
     width: 200px;
     height: 350px;
     background-color: rgba(0, 0, 0, 0.603);
-    border-radius: 20px;
-    // border: 1px solid white;
+    border-radius: 10px;
     position: relative;
     margin-left: 10px;
     float: left;
     margin-top: 10px;
     text-align: center;
+    border: 1px solid #5D4D3D;
+    
+
 }
+
 
 .ItemImage {
     width: 150px;
@@ -22,12 +25,16 @@
 p {
     text-align: center;
     color: white;
+    font-family: 'Morph', cursive;
+
 }
 
 h3 {
     text-align: center;
     color: white;
     margin-top: 10px;
+    font-family: 'Morph', cursive;
+    font-size: 18px;
 }
 
 .Quantity {
@@ -37,6 +44,9 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    font-family: 'Morph', cursive;
+
+
 }
 
 
@@ -55,12 +65,14 @@ h3 {
 .Amount {
     background-color: red;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgba(61, 61, 59, 0.664);
     text-align: center;
     height: 25px;
     width: 60px;
+    color: white;
 }
+
 
 .More {
     display: 1;
@@ -72,6 +84,7 @@ h3 {
     color: white;
     padding-top: 2px;
     border-radius: 5px;
+
 }
 
 .updateButton {
@@ -83,23 +96,38 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 50px;
+    height: 40px;
     margin-top: 20px;
     width: 90%;
     border-radius: 8px;
+    padding-top: 10px;
+    cursor: pointer;
+
 }
 
 .updateButton:hover {
-    background-color: #74c75c;
+    // background-color: #74c75c;
+    background-color: #e89611bb;
+
 }
 
 
+
+.updateSection { 
+    width: 400px;
+    margin: auto;
+    align-items: center;
+    height: 60px;
+    z-index: 999;
+}
+
 .updatedText {
     width: 250px;
-    height: 30px;
-    background-color: #17c52eb6;
-    border-radius: 15px;
+    background-color: #e89611bb;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid black;
+    z-index: 999;
     margin: auto;
-    border: 2px solid black;
-    padding-top: 15px;
+    padding-top: 10px;
 }
