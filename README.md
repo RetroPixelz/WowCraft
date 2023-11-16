@@ -141,7 +141,7 @@ With the theme being world of warcraft i decided to make everything kind of dark
 
 
 <p align="center">
-<img src="src/assets/MoodBoard.png" alt="Image 1" width="500" height="400">
+<img src="src/assets/MoodBoard.png" alt="Image 1" width="500" height="300">
 </p>
 
 ### Wireframes
