@@ -43,6 +43,8 @@
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
+    cursor: pointer;
+
 }
 
 .LocationOne:hover {
@@ -55,11 +57,13 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
-    margin-right: 20px;
-    margin-left: 20px;
     border: 1px solid white;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+
 }
 
 .LocationTwo:hover {
@@ -73,12 +77,9 @@
     height: 40px;
     padding-top: 20px;
     border-radius: 10px;
-
     background-color: rgba(0, 0, 0, 0.603);
-    // border: 1px solid white;
-    // border: 1px solid #e89611;
-
-    // background-color: #e89611bb;
+    border: 1px solid white;
+    cursor: pointer;
 
 }
 

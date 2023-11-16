@@ -1,19 +1,13 @@
-<p class="updatedText" *ngIf="updated">Item Amount Updated</p>
+
+<div class="updateSection">
+    <div *ngIf="updated"  class="updatedText"><p >Item Amount Updated</p></div>
+</div>
 <div *ngFor="let item of items" class="Item">
-
-
     <img class="ItemImage" [src]="item.image">
-
-
     <h3>{{item.title}}</h3>
-
     <div class="Quantity">
-
-
         <input class="Amount" (change)="detectChange($event)" [value]="item.amount" />
-
     </div>
-
     <div class="updateButton" (click)="updateAmount(item._id!)">
         <p>UPDATE</p>
     </div>

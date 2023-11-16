@@ -33,8 +33,8 @@ h3 {
     text-align: center;
     color: white;
     margin-top: 10px;
-    font-family: 'lifeCraft', cursive;
-    font-size: 20px;
+    font-family: 'Morph', cursive;
+    font-size: 18px;
 }
 
 .Quantity {
@@ -101,6 +101,8 @@ h3 {
     width: 90%;
     border-radius: 8px;
     padding-top: 10px;
+    cursor: pointer;
+
 }
 
 .updateButton:hover {
@@ -109,14 +111,22 @@ h3 {
 
 }
 
-
+.updateSection { 
+    width: 400px;
+    margin: auto;
+    align-items: center;
+    height: 60px;
+    z-index: 999;
+}
 
 .updatedText {
     width: 250px;
-    height: 30px;
-    background-color: #17c52eb6;
-    border-radius: 15px;
+    background-color: #e89611bb;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid black;
+    z-index: 999;
     margin: auto;
-    border: 2px solid black;
-    
+    padding-top: 10px;
 }
+

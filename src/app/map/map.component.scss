@@ -60,6 +60,7 @@
     position: absolute;
     left: 200px;
     bottom: 150px;
+    cursor: pointer;
 }
 
 .Horde:hover {
@@ -77,6 +78,8 @@
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
+   
+
 }
 
 .HordeImage {
@@ -136,6 +139,8 @@
     position: absolute;
     right: 200px;
     bottom: 100px;
+    cursor: pointer;
+
 }
 
 .Alliance:hover {
@@ -153,6 +158,8 @@
     position: absolute;
     left: 125px;
     bottom: 100px;
+    cursor: pointer;
+
 }
 
 .ThunderBluff:hover {
@@ -181,9 +188,11 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
+    cursor: pointer;
+
 }
 
 .LocationOne:hover {
@@ -197,11 +206,13 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
+    border: 1px solid white;
     margin-right: 20px;
     margin-left: 20px;
-    border: 1px solid white;
+    cursor: pointer;
+
 }
 
 .LocationTwo:hover {
@@ -214,9 +225,11 @@
     width: 200px;
     height: 40px;
     padding-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.603);
     border: 1px solid white;
+    cursor: pointer;
+
 }
 
 .LocationThree:hover {

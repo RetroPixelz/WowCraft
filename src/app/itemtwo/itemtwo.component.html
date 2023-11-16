@@ -1,4 +1,6 @@
-<p class="updatedText" *ngIf="updated">Item Amount Updated</p>
+<div class="updateSection">
+    <div *ngIf="updated"  class="updatedText"><p >Item Amount Updated</p></div>
+</div>
 <div *ngFor="let item of itemstwo" class="Item">
 
     <img class="ItemImage" [src]="item.image">
@@ -12,6 +14,6 @@
 
     </div>
     <div class="updateButton" (click)="updateAmount(item._id!)">
-        <p>Update !</p>
+        <p>UPDATE</p>
     </div>
 </div>

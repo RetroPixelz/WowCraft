@@ -19,15 +19,11 @@ export class MapComponent {
 
   loading = false
 
-  
   show = false
   show2 = true
   show3 = false
 
-
   activeLocation: string | null = null;
-
-
 
   constructor() { }
 
@@ -35,30 +31,24 @@ export class MapComponent {
     this.show = true
     this.show2 = false
     this.show3 = false
-
-
   }
 
   ShowTwo() {
     this.show = false
     this.show2 = true
     this.show3 = false
-
   }
 
   ShowThree() {
     this.show = false
     this.show2 = false
     this.show3 = true
-
   }
 
   off() {
     this.show = false
     this.show2 = false
     this.show3 = false
-
-
   }
 
   LocationOne() {
@@ -79,16 +69,13 @@ export class MapComponent {
     this.Ogrimmar = false;
     this.Stormwind = false;
     this.ThunderBluff = true;
-   
     this.activeLocation = 'Thunder Bluff';
   }
 
   ngOnInit() {
-      
       this.LocationThree(),
       this.LocationTwo(),
       this.LocationOne()
-
       this.show = false
       this.show2 = false
       this.show3 = false

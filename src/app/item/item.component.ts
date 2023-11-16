@@ -29,8 +29,6 @@ export class ItemComponent {
     })
   }
 
-
-  
   detectChange(e: any) {
     this.newAmountHolder = +e.target.value
   }
@@ -39,8 +37,7 @@ export class ItemComponent {
     this.itemService.updateAmount(id, this.newAmountHolder).subscribe((item) => {
       console.log(item.amount)
       this.updated = true
-
-
+      
     })
   }
 
