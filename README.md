@@ -1,7 +1,3 @@
-
- 
-
-<!-- Repository Information & Links-->
 <br />
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Justin-OwiStudent/WowCraft)
@@ -9,7 +5,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/Justin-OwiStudent/WowCraft)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Justin-OwiStudent/WowCraft)
 
-<!-- HEADER SECTION -->
+
 <h5 align="center" style="padding:0;margin:0;">Justin Koster</h5>
 <h5 align="center" style="padding:0;margin:0;">200100</h5>
 <h6 align="center">DV300 | Term 1</h6>
@@ -33,7 +29,7 @@
     ·
     <a href="https://github.com/Justin-OwiStudent/WowCraft/issues">Request Feature</a>
 </p>
-<!-- TABLE OF CONTENTS -->
+
 
 ## Table of Contents
 
@@ -60,15 +56,13 @@
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
-<!--PROJECT DESCRIPTION-->
+
 
 ## About the Project
 
-<!-- header image of project -->
 
-<!-- ![image1](src/assets/Mock1.png) -->
 <p align="center">
-<img src="src/assets/Mock4.png" alt="Image 1" width="500" height="400">
+<img src="src/assets/Mock4.png" alt="Image 1" width="650" height="400">
 </p>
 
 ### Project Description
@@ -81,8 +75,6 @@ Welcome to WowCraft! This is a Inventory Management application that i built usi
 [<img src="https://www.svgrepo.com/show/452156/angular.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://angular.io/)
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png?20170401104355" width="7%" height="7%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;](https://nodejs.org/en/)
 
-<!-- GETTING STARTED -->
-<!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->
 
 ## Getting Started
 
@@ -117,45 +109,29 @@ Here are a couple of ways to clone this repo:
     ng serve
     ```
 
-
-
-<!-- FEATURES AND FUNCTIONALITY-->
-<!-- You can add the links to all of your imagery at the bottom of the file as references -->
-
 ## Features and Functionality
 
-<!-- note how you can use your gitHub link. Just make a path to your assets folder -->
 
 ### Login & Signup
 
 <p align="center">
-<img src="src/assets/Mock1.png" alt="Image 1" width="500" height="400">
+<img src="src/assets/Mock1.png" alt="Image 1" width="650" height="400">
 </p>
 The user that accesses the application can register or login for the application.
 
 ### Locations and Items
 
 <p align="center">
-<img src="src/assets/Mock2.png" alt="Image 1" width="500" height="400">
+<img src="src/assets/Mock2.png" alt="Image 1" width="650" height="400">
 </p>
 The user has the options to access three different locations with their own items, the user can update each item based on that location.
 
 ### Craft a Recipe
 
 <p align="center">
-<img src="src/assets/Mock3.png" alt="Image 1" width="500" height="400">
+<img src="src/assets/Mock3.png" alt="Image 1" width="650" height="400">
 </p>
 The User can craft a recipe based on location and availability of ingredients in that location.
-
-<!-- ### Only Head Receptionist can add
-
-![image8](src/components/assets/Function4.jpg)
-![image10](src/components/assets/Function4-1.jpg)
-The head receptionist is the only one authorized to add, delete or update appointments, patients & doctors -->
-
-<!-- CONCEPT PROCESS -->
-<!-- Briefly explain your concept ideation process -->
-<!-- here you will add things like wireframing, data structure planning, anything that shows your process. You need to include images-->
 
 ## Concept Process
 
@@ -188,13 +164,11 @@ The `Development Process` is the technical implementations and functionality don
 
 #### Highlights
 
-<!-- stipulated the highlight you experienced with the project -->
 
 - A highlight for me was using the MEAN stack, i found the MEAN stack is very great to work with
 
 #### Challenges
 
-<!-- stipulated the challenges you faced with the project and why you think you faced it or how you think you'll solve it (if not solved) -->
 
 - I got confused with all the different files i had to work with, all the services adn then their components and those components inside of other components.
 - I had a major error with my backend crashing when calling my one Locations crafting recipes, turns out i had the ID of an item wrong.
@@ -203,22 +177,20 @@ The `Development Process` is the technical implementations and functionality don
 
 ### Future Implementation
 
-<!-- TODO Change this! -->
 
-<!-- stipulate functionality and improvements that can be implemented in the future. -->
 
 - I would like to add a user profile page that displays the amount of recipes the user has crafted. 
 - I want to showcase on the user profile all the crafted Recipes.
 - Add JWT, more validation and route protection
 - I want the user to be able to create new recipes and items that they can add by themselves.
 
-<!-- MOCKUPS -->
+
 
 ## Final Outcome
 
 ### Mockups
 
-<!-- TODO Change this -->
+
 
 
 
